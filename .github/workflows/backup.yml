@@ -38,7 +38,7 @@ jobs:
           ${{ runner.os }}-
     - name: Install Python dependencies
       run: |
-        pip install sqlite-utils db-to-sqlite psycopg2-binary sqlite-diffable
+        pip install -r requirements.txt
     - name: Install heroku CLI
       run: npm install heroku
     - name: Import Heroku DB into SQLite
