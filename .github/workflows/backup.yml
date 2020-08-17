@@ -25,6 +25,17 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
+    - name: Configure npm caching
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
     - name: Install Python dependencies
       run: |
         pip install sqlite-utils db-to-sqlite psycopg2-binary sqlite-diffable
@@ -47,6 +58,9 @@ jobs:
           --table django_content_type \
           --table redirects_redirect
         sqlite-utils tables simonwillisonblog.db --counts --columns
+    - name: Redact passwords
+      run: |-
+        sqlite-utils simonwillisonblog.db "update auth_user set password = null"
     - name: Convert to newline-delimited JSON
       run: |-
         rm simonwillisonblog/* || true
