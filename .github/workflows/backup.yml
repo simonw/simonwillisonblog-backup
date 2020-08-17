@@ -5,8 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
-  schedule:
-    - cron: '5 * * * *'
+  # schedule:
+  #  - cron: '5 * * * *'
 
 jobs:
   scheduled:
@@ -29,7 +29,7 @@ jobs:
       run: |
         pip install sqlite-utils db-to-sqlite psycopg2-binary sqlite-diffable
     - name: Install heroku CLI
-      run: npm install -g heroku
+      run: npm install heroku
     - name: Import Heroku DB into SQLite
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
