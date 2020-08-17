@@ -1,0 +1,54 @@
+name: Fetch latest data and deploy with Datasette
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '5 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - uses: actions/cache@v2
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Install Python dependencies
+      run: |
+        pip install sqlite-utils db-to-sqlite psycopg2-binary sqlite-diffable
+    - name: Install heroku CLI
+      run: npm install -g heroku
+    - name: Import Heroku DB into SQLite
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |-
+        db-to-sqlite $(heroku config:get DATABASE_URL -a simonwillisonblog) simonwillisonblog.db \
+          --table auth_permission \
+          --table auth_user \
+          --table blog_blogmark \
+          --table blog_blogmark_tags \
+          --table blog_entry \
+          --table blog_entry_tags \
+          --table blog_quotation \
+          --table blog_quotation_tags \
+          --table blog_tag \
+          --table django_content_type \
+          --table redirects_redirect
+        sqlite-utils tables simonwillisonblog.db --counts --columns
+    - name: Convert to newline-delimited JSON
+      run: |-
+        rm simonwillisonblog/* || true
+        sqlite-diffable dump simonwillisonblog.db simonwillisonblog --all
+        find .
