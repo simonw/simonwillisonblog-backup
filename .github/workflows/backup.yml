@@ -1,12 +1,12 @@
-name: Fetch latest data and deploy with Datasette
+name: Back up my blog database
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-  # schedule:
-  #  - cron: '5 * * * *'
+  schedule:
+    - cron: '26 4 * * *'
 
 jobs:
   scheduled:
