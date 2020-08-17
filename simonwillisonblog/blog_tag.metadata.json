@@ -1,0 +1,8 @@
+{
+    "name": "blog_tag",
+    "columns": [
+        "id",
+        "tag"
+    ],
+    "schema": "CREATE TABLE [blog_tag] (\n   [id] INTEGER PRIMARY KEY,\n   [tag] TEXT\n)"
+}

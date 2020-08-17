@@ -1,0 +1,16 @@
+{
+    "name": "blog_quotation",
+    "columns": [
+        "id",
+        "slug",
+        "quotation",
+        "source",
+        "source_url",
+        "created",
+        "metadata",
+        "search_document",
+        "import_ref",
+        "card_image"
+    ],
+    "schema": "CREATE TABLE [blog_quotation] (\n   [id] INTEGER PRIMARY KEY,\n   [slug] TEXT,\n   [quotation] TEXT,\n   [source] TEXT,\n   [source_url] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT\n)"
+}

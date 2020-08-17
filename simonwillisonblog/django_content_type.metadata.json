@@ -1,0 +1,9 @@
+{
+    "name": "django_content_type",
+    "columns": [
+        "id",
+        "app_label",
+        "model"
+    ],
+    "schema": "CREATE TABLE [django_content_type] (\n   [id] INTEGER PRIMARY KEY,\n   [app_label] TEXT,\n   [model] TEXT\n)"
+}

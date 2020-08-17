@@ -1,0 +1,11 @@
+{
+    "name": "redirects_redirect",
+    "columns": [
+        "id",
+        "domain",
+        "path",
+        "target",
+        "created"
+    ],
+    "schema": "CREATE TABLE [redirects_redirect] (\n   [id] INTEGER PRIMARY KEY,\n   [domain] TEXT,\n   [path] TEXT,\n   [target] TEXT,\n   [created] TEXT\n)"
+}
