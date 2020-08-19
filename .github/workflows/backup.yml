@@ -25,22 +25,9 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - name: Configure npm caching
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
     - name: Install Python dependencies
       run: |
         pip install -r requirements.txt
-    - name: Install heroku CLI
-      run: npm install heroku
     - name: Import Heroku DB into SQLite
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
