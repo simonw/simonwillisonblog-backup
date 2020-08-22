@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '26 4 * * *'
+    - cron: '26 */2 * * *'
 
 jobs:
   scheduled:
