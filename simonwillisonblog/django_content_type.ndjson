@@ -13,3 +13,5 @@
 [13, "blog", "comment"]
 [14, "redirects", "redirect"]
 [15, "feedstats", "subscribercount"]
+[16, "django_sql_dashboard", "dashboard"]
+[17, "django_sql_dashboard", "dashboardquery"]
