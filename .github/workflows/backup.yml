@@ -32,7 +32,7 @@ jobs:
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |-
-        db-to-sqlite 
+        db-to-sqlite \
           $(heroku config:get DATABASE_URL -a simonwillisonblog | sed s/postgres:/postgres+psycopg2:/) \
           simonwillisonblog.db \
           --table auth_permission \
