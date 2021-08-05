@@ -50,6 +50,11 @@ jobs:
     - name: Redact passwords
       run: |-
         sqlite-utils simonwillisonblog.db "update auth_user set password = null"
+    - name: Remove un-interesting search_document columns
+      run: |-
+        sqlite-utils transform simonwillisonblog.db blog_blogmark --drop search_document
+        sqlite-utils transform simonwillisonblog.db blog_entry --drop search_document
+        sqlite-utils transform simonwillisonblog.db blog_quotation --drop search_document
     - name: Convert to newline-delimited JSON
       run: |-
         rm simonwillisonblog/* || true
