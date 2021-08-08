@@ -67,3 +67,7 @@
 [67, "Can change dashboard query", 17, "change_dashboardquery"]
 [68, "Can delete dashboard query", 17, "delete_dashboardquery"]
 [69, "Can view dashboard query", 17, "view_dashboardquery"]
+[94, "Can add series", 49, "add_series"]
+[95, "Can change series", 49, "change_series"]
+[96, "Can delete series", 49, "delete_series"]
+[97, "Can view series", 49, "view_series"]
