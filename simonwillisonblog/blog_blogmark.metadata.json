@@ -14,5 +14,5 @@
         "card_image",
         "series_id"
     ],
-    "schema": "CREATE TABLE \"blog_blogmark\" (\n   [id] INTEGER PRIMARY KEY,\n   [slug] TEXT,\n   [link_url] TEXT,\n   [link_title] TEXT,\n   [via_url] TEXT,\n   [via_title] TEXT,\n   [commentary] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [series_id] TEXT\n)"
+    "schema": "CREATE TABLE \"blog_blogmark\" (\n   [id] INTEGER PRIMARY KEY,\n   [slug] TEXT,\n   [link_url] TEXT,\n   [link_title] TEXT,\n   [via_url] TEXT,\n   [via_title] TEXT,\n   [commentary] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id])\n)"
 }

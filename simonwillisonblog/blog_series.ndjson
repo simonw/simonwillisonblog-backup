@@ -1,0 +1,3 @@
+[1, "2021-08-07T22:52:04+00:00", "vaccinateca", "VaccinateCA internal blog", "I maintained an internal blog between February and April 2021 during my time at VaccinateCA / Vaccinate The States."]
+[2, "2021-08-07T23:00:36+00:00", "datasette-release-notes", "Datasette: the annotated release notes", "I like to accompany significant releases of my Datasette project with an annotated version of the release notes, providing extra background context on new features in the release."]
+[3, "2021-08-07T23:33:23+00:00", "sqlite-utils-features", "New features in sqlite-utils", "Any time I introduce a significant new feature in a release of my sqlite-utils package I write about it here."]
