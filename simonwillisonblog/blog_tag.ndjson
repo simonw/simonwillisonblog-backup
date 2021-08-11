@@ -3889,7 +3889,7 @@
 [3891, "speechrecognition"]
 [3892, "speeddial"]
 [3893, "spelling"]
-[3894, "sphinx"]
+[3894, "sphinxsearch"]
 [3895, "sphinxql"]
 [3896, "spidermonkey"]
 [3897, "spimes"]
@@ -5194,3 +5194,4 @@
 [5324, "semver"]
 [5325, "willmcgugan"]
 [5326, "vaccinatecablog"]
+[5327, "sphinxdocs"]
