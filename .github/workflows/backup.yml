@@ -108,6 +108,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.COMPREHEND_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.COMPREHEND_SECRET_KEY }}
       run: |-
+        pip install https://static.simonwillison.net/static/2022/sqlite_comprehend-0.1-py3-none-any.whl
         which sqlite-comprehend
         sqlite-comprehend --version
         sqlite-comprehend --help
