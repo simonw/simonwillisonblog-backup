@@ -102,6 +102,14 @@ jobs:
     - name: Build database
       run: |-
         sqlite-diffable load simonwillisonblog.db simonwillisonblog --replace
+        sqlite-utils tables simonwillisonblog.db --counts
+    - name: Extract entities
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.COMPREHEND_ACCESS_KEY }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.COMPREHEND_SECRET_KEY }}
+      run: |-
+        sqlite-comprehend entities simonwillisonblog.db blog_entry title body --strip-tags
+        sqlite-utils tables simonwillisonblog.db --counts
     - name: Configure FTS
       run: |-
         set +e

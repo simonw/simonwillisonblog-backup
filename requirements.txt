@@ -2,6 +2,6 @@ sqlite-utils
 db-to-sqlite
 psycopg2-binary
 sqlite-diffable
-sqlite-comprehend
+https://github.com/simonw/sqlite-comprehend/archive/c6bcab7c89bdccebe5efb89a8b6e66e8e175f9de.zip
 sqlite-utils
 datasette
