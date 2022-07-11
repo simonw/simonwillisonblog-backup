@@ -107,6 +107,7 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.COMPREHEND_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.COMPREHEND_SECRET_KEY }}
+        AWS_DEFAULT_REGION: us-west-2
       run: |-
         which sqlite-comprehend
         sqlite-comprehend --version
