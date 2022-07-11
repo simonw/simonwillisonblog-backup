@@ -108,6 +108,10 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.COMPREHEND_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.COMPREHEND_SECRET_KEY }}
       run: |-
+        which sqlite-comprehend
+        sqlite-comprehend --version
+        sqlite-comprehend --help
+        sqlite-comprehend entities --help
         sqlite-comprehend entities simonwillisonblog.db blog_entry title body --strip-tags
         sqlite-utils tables simonwillisonblog.db --counts
     - name: Configure FTS
