@@ -5,11 +5,16 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Deploy even if no changes detected'
+        required: false 
+        type: boolean
   schedule:
     - cron: '26 */2 * * *'
 
 jobs:
-  scheduled:
+  backup:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
@@ -68,3 +73,31 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
+        echo "::set-output name=change_detected::1"
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    needs: backup
+    if: ${{ inputs.force_deploy || needs.backup.outputs.change_detected }}
+    steps:
+    - name: Restore previous database
+      continue-on-error: true
+      run: |-
+        wget https://simonwillisonblog.datasette.io/simonwillisonblog.db
+    - name: Install tools
+      run: |-
+        pip install datasette sqlite-utils sqlite-diffable sqlite-comprehend
+    - name: Build database
+      run: |-
+        sqlite-diffable load simonwillisonblog.db simonwillisonblog --replace
+    - name: Set up Cloud Run
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        version: '275.0.0'
+        service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+    - name: Deploy to Cloud Run
+      run: |-
+        gcloud config set run/region us-central1
+        gcloud config set project datasette-222320
+        datasette publish cloudrun covid.db simonwillisonblog.db \
+          --service simonwillisonblog
