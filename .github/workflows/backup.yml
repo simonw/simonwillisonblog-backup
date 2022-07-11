@@ -16,6 +16,8 @@ on:
 jobs:
   backup:
     runs-on: ubuntu-latest
+    outputs:
+      change_detected: ${{ steps.commit_and_push.outputs.change_detected }}
     steps:
     - name: Check out repo
       uses: actions/checkout@v3
@@ -66,6 +68,7 @@ jobs:
         rm simonwillisonblog/* || true
         sqlite-diffable dump simonwillisonblog.db simonwillisonblog --all
     - name: Commit any changes
+      id: commit_and_push
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
