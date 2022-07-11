@@ -98,7 +98,7 @@ jobs:
     - name: Restore previous database
       continue-on-error: true
       run: |-
-        wget https://simonwillisonblog.datasette.io/simonwillisonblog.db
+        wget https://datasette.simonwillison.net/simonwillisonblog.db
     - name: Build database
       run: |-
         sqlite-diffable load simonwillisonblog.db simonwillisonblog --replace
