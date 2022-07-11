@@ -99,5 +99,8 @@ jobs:
       run: |-
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
-        datasette publish cloudrun covid.db simonwillisonblog.db \
-          --service simonwillisonblog
+        datasette publish cloudrun simonwillisonblog.db \
+          --service simonwillisonblog \
+          --install datasette-block-robots \
+          --install datasette-graphql
+
