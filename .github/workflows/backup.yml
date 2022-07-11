@@ -102,6 +102,15 @@ jobs:
     - name: Build database
       run: |-
         sqlite-diffable load simonwillisonblog.db simonwillisonblog --replace
+    - name: Configure FTS
+      run: |-
+        set +e
+        sqlite-utils enable-fts simonwillisonblog.db blog_series title summary --create-triggers --tokenize porter 2>/dev/null
+        sqlite-utils enable-fts simonwillisonblog.db blog_tag tag --create-triggers --tokenize porter 2>/dev/null
+        sqlite-utils enable-fts simonwillisonblog.db blog_quotation quotation source --create-triggers --tokenize porter 2>/dev/null
+        sqlite-utils enable-fts simonwillisonblog.db blog_entry title body --create-triggers --tokenize porter 2>/dev/null
+        sqlite-utils enable-fts simonwillisonblog.db blog_blogmark link_title via_title commentary --create-triggers --tokenize porter 2>/dev/null
+        set -e
     - name: Set up Cloud Run
       uses: google-github-actions/setup-gcloud@v0
       with:
@@ -116,4 +125,5 @@ jobs:
           -m metadata.yml \
           --service simonwillisonblog \
           --install datasette-block-robots \
-          --install datasette-graphql
+          --install datasette-graphql \
+          --install datasette-search-all
