@@ -118,6 +118,15 @@ jobs:
         sqlite-comprehend entities --help
         sqlite-comprehend entities simonwillisonblog.db blog_entry title body --strip-tags
         sqlite-utils tables simonwillisonblog.db --counts
+    - name: Import the OpenAI embeddings
+      run: |-
+        wget https://gist.githubusercontent.com/simonw/30954443717f770d5cb9c0219bee3d9b/raw/b449c12b6cf146721afb23762316dbe5c42c11c0/blog.db
+        # Create table (if it does not exist yet)
+        sqlite-utils create-table simonwillisonblog.db blog_entry_embeddings \
+          id integer embedding blob --pk id --ignore
+        # Import/replace the embeddings
+        sqlite-utils simonwillisonblog.db --attach embeddings blog.db \
+          'replace into blog_entry_embeddings select cast(id as integer), embedding from embeddings.embeddings'
     - name: Configure FTS
       run: |-
         set +e
@@ -142,4 +151,5 @@ jobs:
           --service simonwillisonblog \
           --install datasette-block-robots \
           --install datasette-graphql \
-          --install datasette-search-all
+          --install datasette-search-all \
+          --install datasette-openai
