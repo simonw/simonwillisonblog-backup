@@ -42,14 +42,15 @@ databases:
           ),
           top_n as (
             select
-              id,
-              openai_embedding_similarity(query.q, embedding) as score
-            from
-              blog_entry_embeddings, query
-            order by
-              score desc
-            limit
-              5
+              value
+            from json_each(
+              faiss_search(
+                'simonwillisonblog',
+                'blog_entry_embeddings',
+                (select q from query),
+                5
+              )
+            )
           ),
           content as (select
             blog_entry.id,
