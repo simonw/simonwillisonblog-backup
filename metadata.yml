@@ -52,16 +52,15 @@ databases:
               )
             )
           ),
-          content as (select
-            blog_entry.id,
-            blog_entry.title,
-            substr(blog_entry.body, 0, 3000) as content,
-            top_n.score
-          from
-            blog_entry
-            join top_n on blog_entry.id = top_n.id
-          order by
-            score desc
+          content as (
+            select
+              blog_entry.id,
+              blog_entry.title,
+              substr(blog_entry.body, 0, 3000) as content
+            from
+              blog_entry
+            where
+              blog_entry.id in (select value from top_n)
           )
           select openai_davinci(group_concat(content, ' ') || '
           ----
