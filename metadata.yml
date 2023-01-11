@@ -7,3 +7,62 @@ plugins:
   datasette-faiss:
     tables:
     - ["simonwillisonblog", "blog_entry_embeddings"]
+databases:
+  simonwillisonblog:
+    queries:
+      embedding_search:
+        sql: |-
+          select
+            value,
+            json_object(
+              'label',
+              blog_entry.title,
+              'href',
+              'https://simonwillison.net/e/' || blog_entry.id
+            ) as title,
+            substr(blog_entry.body, 0, 500)
+          from
+            json_each(
+              faiss_search(
+                'simonwillisonblog',
+                'blog_entry_embeddings',
+                (
+                  select
+                    openai_embedding(:query, :_cookie_openai_api_key)
+                ),
+                10
+              )
+            )
+            join blog_entry on value = blog_entry.id
+      answer_question:
+        sql: |-
+          with query as (
+            select
+              openai_embedding(:query, :_cookie_openai_api_key) as q
+          ),
+          top_n as (
+            select
+              id,
+              openai_embedding_similarity(query.q, embedding) as score
+            from
+              blog_entry_embeddings, query
+            order by
+              score desc
+            limit
+              5
+          ),
+          content as (select
+            blog_entry.id,
+            blog_entry.title,
+            substr(blog_entry.body, 0, 3000) as content,
+            top_n.score
+          from
+            blog_entry
+            join top_n on blog_entry.id = top_n.id
+          order by
+            score desc
+          )
+          select openai_davinci(group_concat(content, ' ') || '
+          ----
+          Given the above content, answer the following question: ' || :query, 256, 0.7, :_cookie_openai_api_key)
+          as response from content
