@@ -153,4 +153,5 @@ jobs:
           --install datasette-block-robots \
           --install datasette-graphql \
           --install datasette-search-all \
-          --install "datasette-openai>=0.1a1"
+          --install "datasette-openai>=0.1a1" \
+          --install datasette-faiss
