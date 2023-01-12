@@ -38,7 +38,7 @@ databases:
         sql: |-
           with query as (
             select
-              openai_embedding(:query, :_cookie_openai_api_key) as q
+              openai_embedding(:question, :_cookie_openai_api_key) as q
           ),
           top_n as (
             select
@@ -52,17 +52,31 @@ databases:
               )
             )
           ),
-          content as (
-            select
-              blog_entry.id,
-              blog_entry.title,
-              substr(blog_entry.body, 0, 3000) as content
-            from
-              blog_entry
-            where
-              blog_entry.id in (select value from top_n)
+          texts as (
+            select 'Created: ' || created || ', Title: ' || title || 
+            ', Body: ' || openai_strip_tags(body) as text
+            from blog_entry where id in (select value from top_n)
+          ),
+          prompt as (
+            select openai_build_prompt(text, 'Context:
+          ------------
+          ', '
+          ------------
+          Given the above context, answer the following question: ' || :question,
+            case when cast(:length as integer) = 0 then 256 else cast(:length as integer) end,
+            4000 - openai_count_tokens(:question)
+            ) as prompt from texts
           )
-          select openai_davinci(group_concat(content, ' ') || '
-          ----
-          Given the above content, answer the following question: ' || :query, 256, 0.7, :_cookie_openai_api_key)
-          as response from content
+          select
+            'Response' as title,
+            openai_davinci(
+              prompt,
+              case when cast(:length as integer) = 0 then 256 else cast(:length as integer) end,
+              0.7,
+              :_cookie_openai_api_key
+            ) as value
+          from prompt
+          union all
+          select
+            'Prompt' as title,
+            prompt from prompt
