@@ -64,7 +64,7 @@ databases:
           ------------
           Given the above context, answer the following question: ' || :question,
             case when cast(:length as integer) = 0 then 256 else cast(:length as integer) end,
-            4000 - openai_count_tokens(:question)
+            3500 - openai_count_tokens(:question)
             ) as prompt from texts
           )
           select
