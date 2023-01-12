@@ -153,7 +153,7 @@ jobs:
           --install datasette-block-robots \
           --install datasette-graphql \
           --install datasette-search-all \
-          --install "datasette-openai>=0.1a1" \
+          --install "datasette-openai>=0.1a2" \
           --install datasette-faiss \
           --install "datasette-cookies-for-magic-parameters>=0.1.1" \
           --install datasette-json-html
