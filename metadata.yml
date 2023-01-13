@@ -34,6 +34,7 @@ databases:
               )
             )
             join blog_entry on value = blog_entry.id
+            where length(coalesce(:query, '')) > 0
       answer_question:
         sql: |-
           with query as (
@@ -51,6 +52,7 @@ databases:
                 5
               )
             )
+            where length(coalesce(:query, '')) > 0
           ),
           texts as (
             select 'Created: ' || created || ', Title: ' || title || 
