@@ -52,7 +52,7 @@ databases:
                 5
               )
             )
-            where length(coalesce(:query, '')) > 0
+            where length(coalesce(:question, '')) > 0
           ),
           texts as (
             select 'Created: ' || created || ', Title: ' || title || 
@@ -78,7 +78,7 @@ databases:
               :_cookie_openai_api_key
             ) as value
             from prompt
-            where length(coalesce(:query, '')) > 0
+            where length(coalesce(:question, '')) > 0
           union all
           select
             'Prompt' as title,
