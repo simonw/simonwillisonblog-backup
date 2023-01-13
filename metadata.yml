@@ -77,7 +77,8 @@ databases:
               0.7,
               :_cookie_openai_api_key
             ) as value
-          from prompt
+            from prompt
+            where length(coalesce(:query, '')) > 0
           union all
           select
             'Prompt' as title,
