@@ -5,3 +5,4 @@ sqlite-diffable
 sqlite-comprehend>=0.2.1
 sqlite-utils
 datasette
+datasette-sqlite-regex
