@@ -1,5 +1,5 @@
 sqlite-utils
-db-to-sqlite
+db-to-sqlite>=1.5
 psycopg2-binary
 sqlite-diffable
 sqlite-comprehend>=0.2.1
