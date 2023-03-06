@@ -148,6 +148,7 @@ jobs:
         gcloud config set project datasette-222320
         datasette publish cloudrun simonwillisonblog.db \
           -m metadata.yml \
+          --branch 1.0a2 \
           --extra-options "--setting sql_time_limit_ms 15000 --setting truncate_cells_html 10000" \
           --service simonwillisonblog \
           --install datasette-block-robots \
