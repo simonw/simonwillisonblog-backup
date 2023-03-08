@@ -10,8 +10,8 @@ on:
         description: 'Deploy even if no changes detected'
         required: false 
         type: boolean
-#  schedule:
-#    - cron: '26 */2 * * *'
+  schedule:
+    - cron: '26 */2 * * *'
 
 jobs:
   backup:

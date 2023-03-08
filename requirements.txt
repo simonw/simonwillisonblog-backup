@@ -4,5 +4,5 @@ psycopg2-binary
 sqlite-diffable
 sqlite-comprehend>=0.2.1
 sqlite-utils
-datasette
+datasette>=0.64.2
 datasette-sqlite-regex
