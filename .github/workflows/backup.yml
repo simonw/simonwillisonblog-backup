@@ -159,4 +159,6 @@ jobs:
           --install "datasette-cookies-for-magic-parameters>=0.1.2" \
           --install datasette-json-html \
           --install datasette-sqlite-regex \
-          --install datasette-explain
+          --install datasette-explain \
+          --install datasette-simple-html \
+          --install datasette-dateutil
