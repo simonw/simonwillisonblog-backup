@@ -6,3 +6,4 @@
 [7, "2022-08-17T18:28:35+00:00", "datasette-lite", "Datasette Lite", "A distribution of Datasette that runs entirely in the browser, using WebAssembly and Pyodide."]
 [8, "2022-09-17T20:13:51+00:00", "prompt-injection", "Prompt injection", "A security vulnerability in software built on top of large AI language models like GPT-3."]
 [9, "2022-09-29T21:53:37+00:00", "how-its-trained", "How it's trained", "Investigating the training data behind different machine learning models."]
+[10, "2023-03-17T18:31:42+00:00", "llms-on-personal-devices", "LLMs on personal devices", "Large language models that can run on our own devices open up exciting new ways in which these tools can be used."]
