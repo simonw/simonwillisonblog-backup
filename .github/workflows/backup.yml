@@ -67,6 +67,11 @@ jobs:
       run: |-
         rm simonwillisonblog/* || true
         sqlite-diffable dump simonwillisonblog.db simonwillisonblog --all
+    - name: Backup Substack
+      run: |-
+        curl 'https://simonw.substack.com/feed' | \
+          python -c "import sys, xml.dom.minidom; print(xml.dom.minidom.parseString(sys.stdin.read()).toprettyxml(indent='  '))" \
+          > simonw-substack-com.xml
     - name: Commit any changes
       id: commit_and_push
       run: |-
