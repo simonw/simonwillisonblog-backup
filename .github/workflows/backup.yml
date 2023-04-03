@@ -142,6 +142,18 @@ jobs:
         sqlite-utils enable-fts simonwillisonblog.db blog_entry title body --create-triggers --tokenize porter 2>/dev/null
         sqlite-utils enable-fts simonwillisonblog.db blog_blogmark link_title via_title commentary --create-triggers --tokenize porter 2>/dev/null
         set -e
+    - name: Copy in latest TILs
+      run: |
+        wget https://s3.amazonaws.com/til.simonwillison.net/tils.db
+        echo "
+        ATTACH DATABASE 'simonwillisonblog.db' AS simonwillisonblog;
+        ATTACH DATABASE 'tils.db' AS tils;
+        DROP TABLE IF EXISTS simonwillisonblog.tils;
+        CREATE TABLE simonwillisonblog.til AS SELECT * FROM tils.til;
+        UPDATE simonwillisonblog.til SET shot = null;
+        DETACH DATABASE tils;
+        DETACH DATABASE simonwillisonblog;
+        " | sqlite3
     - name: Set up Cloud Run
       uses: google-github-actions/setup-gcloud@v0
       with:
