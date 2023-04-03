@@ -146,13 +146,11 @@ jobs:
       run: |
         wget https://s3.amazonaws.com/til.simonwillison.net/tils.db
         echo "
-        ATTACH DATABASE 'simonwillisonblog.db' AS simonwillisonblog;
-        ATTACH DATABASE 'tils.db' AS tils;
-        DROP TABLE IF EXISTS simonwillisonblog.tils;
-        CREATE TABLE simonwillisonblog.til AS SELECT * FROM tils.til;
-        UPDATE simonwillisonblog.til SET shot = null;
-        DETACH DATABASE tils;
-        DETACH DATABASE simonwillisonblog;
+        attach database 'simonwillisonblog.db' as simonwillisonblog;
+        attach database 'tils.db' as tils;
+        drop table if exists simonwillisonblog.til;
+        create table simonwillisonblog.til as select * from tils.til;
+        update simonwillisonblog.til set shot = null;
         " | sqlite3
     - name: Set up Cloud Run
       uses: google-github-actions/setup-gcloud@v0
