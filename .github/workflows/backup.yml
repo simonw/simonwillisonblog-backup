@@ -70,8 +70,20 @@ jobs:
     - name: Backup Substack
       run: |-
         curl 'https://simonw.substack.com/feed' | \
-          python -c "import sys, xml.dom.minidom; print(xml.dom.minidom.parseString(sys.stdin.read()).toprettyxml(indent='  '))" \
-          > simonw-substack-com.xml
+          python -c "
+        import sys
+        import xml.dom.minidom
+
+        xml_string = sys.stdin.read()
+        dom = xml.dom.minidom.parseString(xml_string)
+
+        last_build_date_elements = dom.getElementsByTagName('lastBuildDate')
+        for elem in last_build_date_elements:
+            elem.parentNode.removeChild(elem)
+
+        pretty_xml = dom.toprettyxml(indent='  ')
+        print(pretty_xml)
+        " > simonw-substack-com.xml
     - name: Commit any changes
       id: commit_and_push
       run: |-
