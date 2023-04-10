@@ -10,6 +10,33 @@ plugins:
 databases:
   simonwillisonblog:
     queries:
+      recent_content:
+        sql: |-
+          select
+            'blogmark' as type,
+            created,
+            link_title as title,
+            'https://simonwillison.net/b/' || id as link
+          from
+            blog_blogmark
+          union all
+          select
+            'entry',
+            created,
+            title,
+            'https://simonwillison.net/e/' || id
+          from
+            blog_entry
+          union all
+          select
+            'quotation' as type,
+            created,
+            source || ': ' || quotation as title,
+            'https://simonwillison.net/q/' || id as link
+          from
+            blog_quotation
+          order by
+            created desc
       embedding_search:
         sql: |-
           select
