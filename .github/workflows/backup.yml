@@ -154,6 +154,12 @@ jobs:
         sqlite-utils enable-fts simonwillisonblog.db blog_entry title body --create-triggers --tokenize porter 2>/dev/null
         sqlite-utils enable-fts simonwillisonblog.db blog_blogmark link_title via_title commentary --create-triggers --tokenize porter 2>/dev/null
         set -e
+        # Re-populate tables just in case they're missing anything
+        sqlite-utils populate-fts simonwillisonblog.db blog_series title summary
+        sqlite-utils populate-fts simonwillisonblog.db blog_tag tag
+        sqlite-utils populate-fts simonwillisonblog.db blog_quotation quotation source
+        sqlite-utils populate-fts simonwillisonblog.db blog_entry title body
+        sqlite-utils populate-fts simonwillisonblog.db blog_blogmark link_title via_title commentary
     - name: Copy in latest TILs
       run: |
         wget https://s3.amazonaws.com/til.simonwillison.net/tils.db
