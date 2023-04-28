@@ -4,6 +4,12 @@ source_url: https://simonwillison.net/
 about: simonw/simonwillisonblog-backup
 about_url: https://github.com/simonw/simonwillisonblog-backup
 plugins:
+  datasette-block-robots:
+    literal: |-
+      User-agent: *
+      Disallow: /
+      User-agent: ChatGPT-User
+      Disallow:
   datasette-faiss:
     tables:
     - ["simonwillisonblog", "blog_entry_embeddings"]
