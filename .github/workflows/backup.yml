@@ -168,7 +168,6 @@ jobs:
         attach database 'tils.db' as tils;
         drop table if exists simonwillisonblog.til;
         create table simonwillisonblog.til as select * from tils.til;
-        update simonwillisonblog.til set shot = null;
         " | sqlite3
     - name: Set up Cloud Run
       uses: google-github-actions/setup-gcloud@v0
