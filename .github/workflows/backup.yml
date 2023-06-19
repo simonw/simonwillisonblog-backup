@@ -94,7 +94,7 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
-        echo "::set-output name=change_detected::1"
+        run: echo "change_detected=1" >> $GITHUB_OUTPUT
   build_and_deploy:
     runs-on: ubuntu-latest
     needs: backup
