@@ -5,5 +5,5 @@
         "entry_id",
         "tag_id"
     ],
-    "schema": "CREATE TABLE [blog_entry_tags] (\n   [id] INTEGER PRIMARY KEY,\n   [entry_id] INTEGER,\n   [tag_id] INTEGER,\n   FOREIGN KEY([entry_id]) REFERENCES [blog_entry]([id]),\n   FOREIGN KEY([tag_id]) REFERENCES [blog_tag]([id])\n)"
+    "schema": "CREATE TABLE \"blog_entry_tags\" (\n   [id] INTEGER PRIMARY KEY,\n   [entry_id] INTEGER REFERENCES [blog_entry]([id]),\n   [tag_id] INTEGER REFERENCES [blog_tag]([id])\n)"
 }
