@@ -2,7 +2,7 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" version="2.0">
   <channel>
     <title><![CDATA[Simon Willison’s Newsletter]]></title>
-    <description><![CDATA[Web engineering, open source, data science, Datasette, SQLite, Python and more]]></description>
+    <description><![CDATA[LLMs, web engineering, open source, data science, Datasette, SQLite, Python and more]]></description>
     <link>https://simonw.substack.com</link>
     <image>
       <url>https://substackcdn.com/image/fetch/w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsimonw.substack.com%2Fimg%2Fsubstack.png</url>
