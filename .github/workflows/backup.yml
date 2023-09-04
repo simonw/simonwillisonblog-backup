@@ -140,7 +140,7 @@ jobs:
         sqlite-utils tables simonwillisonblog.db --counts
     - name: Import the OpenAI embeddings
       run: |-
-        wget https://gist.githubusercontent.com/simonw/30954443717f770d5cb9c0219bee3d9b/raw/b449c12b6cf146721afb23762316dbe5c42c11c0/blog.db
+        wget https://static.simonwillison.net/static/2023/blog-embeddings/blog.db
         # Create table (if it does not exist yet)
         sqlite-utils create-table simonwillisonblog.db blog_entry_embeddings \
           id integer embedding blob --pk id --ignore
