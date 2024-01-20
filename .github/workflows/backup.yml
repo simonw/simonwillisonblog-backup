@@ -69,7 +69,7 @@ jobs:
         sqlite-diffable dump simonwillisonblog.db simonwillisonblog --all
     - name: Backup Substack
       run: |-
-        curl 'https://simonw.substack.com/feed' > simonw-substack-com.xml
+        curl 'https://simon.datasette.cloud/substack' > simonw-substack-com.xml
     - name: Commit any changes
       id: commit_and_push
       run: |-
