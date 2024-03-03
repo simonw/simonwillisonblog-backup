@@ -71,7 +71,7 @@ jobs:
       run: |-
         curl 'https://simon.datasette.site/substack' > simonw-substack-com.xml
         # Remove last build date because it changes every time
-        sed -i '/<lastBuildDate>.*<\/lastBuildDate>/d' simonw-substack-com.xml
+        sed -i '/<lastBuildDate>.*?<\/lastBuildDate>/d' simonw-substack-com.xml
     - name: Commit any changes
       id: commit_and_push
       run: |-
