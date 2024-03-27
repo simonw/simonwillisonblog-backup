@@ -88,7 +88,7 @@ jobs:
     needs: backup
     if: >
       ${{ inputs.force_deploy || needs.backup.outputs.change_detected || 
-        contains(github.event.workflow_run.head_commit.modified, '.github/workflows/backup.yml'))
+        contains(github.event.workflow_run.head_commit.modified, '.github/workflows/backup.yml')) }}
     steps:
     - name: Check out repo
       uses: actions/checkout@v3
