@@ -4,7 +4,7 @@
 [5, "2022-02-08T22:24:01+00:00", "git-scraping", "Git scraping", "A technique for scraping content into a Git repository to track changes to it over time."]
 [6, "2022-02-08T22:27:50+00:00", "open-source-process", "My open source process", "Articles about the process I use for developing my open source projects."]
 [7, "2022-08-17T18:28:35+00:00", "datasette-lite", "Datasette Lite", "A distribution of Datasette that runs entirely in the browser, using WebAssembly and Pyodide."]
-[8, "2022-09-17T20:13:51+00:00", "prompt-injection", "Prompt injection", "A security vulnerability in software built on top of large AI language models like GPT-3."]
+[8, "2022-09-17T20:13:51+00:00", "prompt-injection", "Prompt injection", "A security vulnerability in software built on top of Large Language Models such as GPT-3, GPT-4, Claude, Llama, Mistral and Gemini."]
 [9, "2022-09-29T21:53:37+00:00", "how-its-trained", "How it's trained", "Investigating the training data behind different machine learning models."]
 [10, "2023-03-17T18:31:42+00:00", "llms-on-personal-devices", "LLMs on personal devices", "Large language models that can run on our own devices open up exciting new ways in which these tools can be used."]
 [11, "2023-03-22T03:14:21+00:00", "llm-misconceptions", "Misconceptions about large language models", "Large Language Models can behave in very unintuitive ways!"]
