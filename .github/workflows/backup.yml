@@ -69,9 +69,9 @@ jobs:
         sqlite-diffable dump simonwillisonblog.db simonwillisonblog --all
     - name: Backup Substack
       run: |-
-        curl 'https://simon.datasette.site/substack' > simonw-substack-com.xml
-        # Remove last build date because it changes every time
-        sed -i '/<lastBuildDate>.*?<\/lastBuildDate>/d' simonw-substack-com.xml
+        curl 'https://simon.datasette.site/substack' | \
+          python -c "import sys, re; print(re.sub(r'<lastBuildDate>.*?</lastBuildDate>', '', sys.stdin.read(), flags=re.DOTALL))" \
+          > simonw-substack-com.xml
     - name: Commit any changes
       id: commit_and_push
       run: |-
