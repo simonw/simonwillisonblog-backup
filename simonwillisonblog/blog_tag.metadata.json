@@ -2,7 +2,8 @@
     "name": "blog_tag",
     "columns": [
         "id",
-        "tag"
+        "tag",
+        "description"
     ],
-    "schema": "CREATE TABLE [blog_tag] (\n   [id] INTEGER PRIMARY KEY,\n   [tag] TEXT\n)"
+    "schema": "CREATE TABLE [blog_tag] (\n   [id] INTEGER PRIMARY KEY,\n   [tag] TEXT,\n   [description] TEXT\n)"
 }
