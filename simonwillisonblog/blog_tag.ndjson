@@ -5316,7 +5316,7 @@
 [5487, "ruff", ""]
 [5488, "colindellow", ""]
 [5489, "enrichments", ""]
-[5490, "slop", ""]
+[5490, "slop", "**Slop** describes AI-generated content that is both *unrequested* and *unreviewed*."]
 [5491, "hamradio", ""]
 [5492, "nvidia", ""]
 [5493, "fastly", ""]
