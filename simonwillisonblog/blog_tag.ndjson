@@ -5330,3 +5330,4 @@
 [5501, "markdownexfiltration", "**Markdown Exfiltration** is a [prompt injection](https://simonwillison.net/tags/promptinjection/) attack against chatbots that have access to private information and can render Markdown images. An attacker can trick the bot into rendering an image that leaks data encoded in the URL to an external server."]
 [5534, "andreaskling", ""]
 [5567, "vscode", "Microsoft's partially open source text editor [Visual Studio Code](https://code.visualstudio.com/)."]
+[5568, "ladybird", "[Ladybird](https://ladybird.org/) is \"a truly independent web browser\"."]
