@@ -5124,7 +5124,7 @@
 [5225, "jefftriplett", ""]
 [5226, "covid19", ""]
 [5227, "til", ""]
-[5228, "gitscraping", ""]
+[5228, "gitscraping", "[Git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) is a technique where data is scraped from an external source into a Git repository in order to record changes to that data over time."]
 [5229, "applephotos", ""]
 [5230, "tommacwright", ""]
 [5231, "maxwoolf", ""]
