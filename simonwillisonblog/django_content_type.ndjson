@@ -16,3 +16,4 @@
 [16, "django_sql_dashboard", "dashboard"]
 [17, "django_sql_dashboard", "dashboardquery"]
 [49, "blog", "series"]
+[50, "blog", "previoustagname"]

@@ -71,3 +71,7 @@
 [95, "Can change series", 49, "change_series"]
 [96, "Can delete series", 49, "delete_series"]
 [97, "Can view series", 49, "view_series"]
+[98, "Can add previous tag name", 50, "add_previoustagname"]
+[99, "Can change previous tag name", 50, "change_previoustagname"]
+[100, "Can delete previous tag name", 50, "delete_previoustagname"]
+[101, "Can view previous tag name", 50, "view_previoustagname"]
