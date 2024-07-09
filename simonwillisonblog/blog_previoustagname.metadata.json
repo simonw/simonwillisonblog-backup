@@ -1,0 +1,9 @@
+{
+    "name": "blog_previoustagname",
+    "columns": [
+        "id",
+        "previous_name",
+        "tag_id"
+    ],
+    "schema": "CREATE TABLE \"blog_previoustagname\" (\n   [id] INTEGER PRIMARY KEY,\n   [previous_name] TEXT,\n   [tag_id] INTEGER REFERENCES [blog_tag]([id])\n)"
+}
