@@ -5256,7 +5256,7 @@
 [5477, "boring-technology", "[boringtechnology.club](https://boringtechnology.club/)"]
 [5478, "matt-holt", ""]
 [5479, "vercel", ""]
-[5480, "code-interpreter", "ChatGPT Code Interpreter is a mode of [ChatGPT](https://chatgpt.com/) that allows it to write and then execute Python code in a sandboxed environment."]
+[5480, "code-interpreter", "ChatGPT Code Interpreter is a mode of [ChatGPT](https://chatgpt.com/) that allows it to write and then execute Python code in a sandboxed environment. OpenAI sometimes call this feature [data analysis](https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt)."]
 [5481, "supply-chain", ""]
 [5482, "quickjs", ""]
 [5483, "cohere", ""]
