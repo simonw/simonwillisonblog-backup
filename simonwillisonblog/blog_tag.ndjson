@@ -5293,3 +5293,5 @@
 [5606, "jason-koebler", ""]
 [5607, "brent-ashley", ""]
 [5608, "gergely-orosz", ""]
+[5609, "groq", ""]
+[5610, "llm-tool-use", "Tool use is when an LLM is instructed to occasionally request that an external tool be run on its behalf, with the result passed back to the model for further processing. Sometimes also known as function calling, and one of several ideas that might be referred to as \"agents\"."]
