@@ -3874,7 +3874,7 @@
 [3906, "spritegenerator", ""]
 [3907, "sql", ""]
 [3908, "sqlalchemy", ""]
-[3909, "sqlinjection", ""]
+[3909, "sql-injection", ""]
 [3910, "sqlite", "[SQLite](https://www.sqlite.org/) is the world's [most widely deployed database engine](https://www.sqlite.org/mostdeployed.html)."]
 [3911, "sqll", ""]
 [3912, "sqllike", ""]
