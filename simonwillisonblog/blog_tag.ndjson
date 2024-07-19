@@ -5262,7 +5262,7 @@
 [5487, "ruff", ""]
 [5488, "colin-dellow", ""]
 [5489, "enrichments", ""]
-[5490, "slop", "**Slop** describes AI-generated content that is both *unrequested* and *unreviewed*."]
+[5490, "slop", "**Slop** describes AI-generated content that is both *unrequested* and *unreviewed*. See [Slop is the new name for unwanted AI-generated content](https://simonwillison.net/2024/May/8/slop/)."]
 [5491, "ham-radio", ""]
 [5492, "nvidia", ""]
 [5493, "fastly", ""]
