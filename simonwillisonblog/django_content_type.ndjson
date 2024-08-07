@@ -17,3 +17,5 @@
 [17, "django_sql_dashboard", "dashboardquery"]
 [49, "blog", "series"]
 [50, "blog", "previoustagname"]
+[83, "django_http_debug", "debugendpoint"]
+[84, "django_http_debug", "requestlog"]
