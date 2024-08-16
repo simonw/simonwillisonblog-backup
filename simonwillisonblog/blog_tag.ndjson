@@ -5308,3 +5308,5 @@
 [5633, "claude-3-5-sonnet", ""]
 [5634, "observable-framework", ""]
 [5635, "passkeys", ""]
+[5636, "aider", ""]
+[5637, "evals", "Evaluations and benchmarks of AI systems, for example to compare different models and prompting strategies."]
