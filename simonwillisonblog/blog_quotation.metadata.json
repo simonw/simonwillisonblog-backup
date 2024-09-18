@@ -10,7 +10,8 @@
         "metadata",
         "import_ref",
         "card_image",
-        "series_id"
+        "series_id",
+        "is_draft"
     ],
-    "schema": "CREATE TABLE \"blog_quotation\" (\n   [id] INTEGER PRIMARY KEY,\n   [slug] TEXT,\n   [quotation] TEXT,\n   [source] TEXT,\n   [source_url] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id])\n)"
+    "schema": "CREATE TABLE \"blog_quotation\" (\n   [id] INTEGER PRIMARY KEY,\n   [slug] TEXT,\n   [quotation] TEXT,\n   [source] TEXT,\n   [source_url] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id]),\n   [is_draft] INTEGER\n)"
 }
