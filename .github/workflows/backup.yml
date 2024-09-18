@@ -59,6 +59,11 @@ jobs:
     - name: Redact passwords
       run: |-
         sqlite-utils simonwillisonblog.db "update auth_user set password = null"
+    - name: Delete draft posts
+      run: |-
+        sqlite-utils simonwillisonblog.db "delete from blog_entry where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_blogmark where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_quotation where is_draft = 1"
     - name: Remove un-interesting search_document columns
       run: |-
         sqlite-utils transform simonwillisonblog.db blog_blogmark --drop search_document
