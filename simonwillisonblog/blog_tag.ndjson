@@ -1742,7 +1742,6 @@
 [1758, "guido-van-rossum", ""]
 [1759, "guiness", ""]
 [1760, "gutsy", ""]
-[1761, "guykawasaki", ""]
 [1762, "gwt", ""]
 [1763, "gypsyjazz", ""]
 [1764, "gzip", ""]
@@ -5315,3 +5314,4 @@
 [5672, "mlx", "The [MLX framework](https://github.com/ml-explore/mlx) for running machine learning models on Apple Silicon."]
 [5673, "comedy", ""]
 [5674, "overture", "[Overture](https://overturemaps.org/) provides interoperable open map data."]
+[5675, "notebooklm", "Google's [NotebookLM](https://notebooklm.google/) \"personalized research assistant\"."]
