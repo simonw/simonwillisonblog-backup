@@ -19,3 +19,4 @@
 [50, "blog", "previoustagname"]
 [83, "django_http_debug", "debugendpoint"]
 [84, "django_http_debug", "requestlog"]
+[116, "blog", "liveupdate"]

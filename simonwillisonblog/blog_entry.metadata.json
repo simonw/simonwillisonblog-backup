@@ -13,7 +13,8 @@
         "card_image",
         "custom_template",
         "series_id",
-        "is_draft"
+        "is_draft",
+        "live_timezone"
     ],
-    "schema": "CREATE TABLE \"blog_entry\" (\n   [id] INTEGER PRIMARY KEY,\n   [title] TEXT,\n   [slug] TEXT,\n   [body] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [tweet_html] TEXT,\n   [import_ref] TEXT,\n   [extra_head_html] TEXT,\n   [card_image] TEXT,\n   [custom_template] TEXT,\n   [series_id] INTEGER REFERENCES [blog_series]([id]),\n   [is_draft] INTEGER\n)"
+    "schema": "CREATE TABLE \"blog_entry\" (\n   [id] INTEGER PRIMARY KEY,\n   [title] TEXT,\n   [slug] TEXT,\n   [body] TEXT,\n   [created] TEXT,\n   [metadata] TEXT,\n   [tweet_html] TEXT,\n   [import_ref] TEXT,\n   [extra_head_html] TEXT,\n   [card_image] TEXT,\n   [custom_template] TEXT,\n   [series_id] INTEGER REFERENCES [blog_series]([id]),\n   [is_draft] INTEGER,\n   [live_timezone] TEXT\n)"
 }

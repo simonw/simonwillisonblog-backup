@@ -83,3 +83,7 @@
 [107, "Can change request log", 84, "change_requestlog"]
 [108, "Can delete request log", 84, "delete_requestlog"]
 [109, "Can view request log", 84, "view_requestlog"]
+[131, "Can add live update", 116, "add_liveupdate"]
+[132, "Can change live update", 116, "change_liveupdate"]
+[133, "Can delete live update", 116, "delete_liveupdate"]
+[134, "Can view live update", 116, "view_liveupdate"]
