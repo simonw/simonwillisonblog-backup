@@ -35,6 +35,8 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install -r requirements.txt
+    - name: Install Heroku CLI
+      run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Import Heroku DB into SQLite
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
