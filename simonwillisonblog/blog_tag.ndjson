@@ -5172,7 +5172,7 @@
 [5419, "bard", ""]
 [5420, "webpush", ""]
 [5421, "laion", ""]
-[5422, "homebrew-llms", "LLMs you can run on your own devices."]
+[5422, "edge-llms", "LLMs that can run on consumer hardware like laptops or mobile phones."]
 [5423, "llms", "Large Language Models (LLMs) are the class of technology behind generative text AI systems like OpenAI's [ChatGPT](https://simonwillison.net/tags/chatgpt/), Google's [Gemini](https://simonwillison.net/tags/gemini/) and Anthropic's [Claude](https://simonwillison.net/tags/claude/)."]
 [5424, "textual", ""]
 [5425, "bloom", ""]
