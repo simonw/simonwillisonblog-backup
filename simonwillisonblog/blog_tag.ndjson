@@ -5322,7 +5322,7 @@
 [5738, "nous-research", ""]
 [5739, "llm-pricing", "Posts about the pricing of various LLMs. See also my [pricing calculator](https://tools.simonwillison.net/llm-prices)."]
 [5740, "nicholas-carlini", ""]
-[5741, "ollama", ""]
+[5741, "ollama", "[Ollama](https://ollama.com/) is a tool for downloading and running Large Language Models."]
 [5742, "dustin-ingram", ""]
 [5743, "text-to-image", ""]
 [5765, "bluesky", ""]
@@ -5333,3 +5333,4 @@
 [5800, "logan-kilpatrick", ""]
 [5802, "pelican-riding-a-bicycle", "My [benchmark for LLMs](https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/): \"Generate an SVG of a pelican riding a bicycle\""]
 [5803, "amanda-askell", ""]
+[5831, "pydantic", "[Pydantic](https://docs.pydantic.dev/) is a data validation library for Python based around Python's type annotation feature."]
