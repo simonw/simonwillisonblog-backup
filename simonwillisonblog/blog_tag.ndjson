@@ -5335,3 +5335,4 @@
 [5831, "pydantic", "[Pydantic](https://docs.pydantic.dev/) is a data validation library for Python based around Python's type annotation feature."]
 [5832, "text-to-video", ""]
 [5833, "inference-scaling", "Improving performance of LLMs through inference - spending more tokens \"thinking\" about a problem, as seen in OpenAI's o1 and Qwen's QwQ."]
+[5834, "o3", ""]
