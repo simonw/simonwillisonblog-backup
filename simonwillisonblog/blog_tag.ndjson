@@ -5336,3 +5336,5 @@
 [5832, "text-to-video", ""]
 [5833, "inference-scaling", "Improving performance of LLMs through inference - spending more tokens \"thinking\" about a problem, as seen in OpenAI's o1 and Qwen's QwQ."]
 [5834, "o3", ""]
+[5835, "deepseek", "[DeepSeek](https://www.deepseek.com/) is an AI lab from Chinese hedge fund [High-Flyer](https://en.wikipedia.org/wiki/High-Flyer_(company))."]
+[5836, "streaks", ""]
