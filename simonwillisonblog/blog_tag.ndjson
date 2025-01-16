@@ -5339,3 +5339,4 @@
 [5840, "jonathan-delacour", ""]
 [5841, "addy-osmani", ""]
 [5842, "alex-komoroske", ""]
+[5843, "prompt-caching", "Some LLM providers offer a feature where common prompt prefixes can be cached, providing a performance boost and price reduction."]
