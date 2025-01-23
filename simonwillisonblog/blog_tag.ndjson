@@ -5306,7 +5306,7 @@
 [5701, "observable-plot", "The <a href=\"https://observablehq.com/plot/\">Observable Plot</a> JavaScript visualization library."]
 [5702, "gpus", "GPUs aren't just for graphics anymore."]
 [5703, "trey-hunner", ""]
-[5704, "ai-agents", "I don't think the term \"agents\" has a useful, widely shared definition."]
+[5704, "ai-agents", "I don't think the term \"agents\" [has a useful](https://simonwillison.net/2024/Dec/31/llms-in-2024/#-agents-still-haven-t-really-happened-yet), widely shared definition."]
 [5732, "terence-eden", ""]
 [5733, "forrest-brazeal", ""]
 [5734, "arvind-narayanan", ""]
