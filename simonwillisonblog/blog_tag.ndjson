@@ -5290,7 +5290,7 @@
 [5643, "samesite", ""]
 [5644, "kevin-roose", ""]
 [5645, "ted-chiang", ""]
-[5646, "qwen", ""]
+[5646, "qwen", "[Qwen](https://huggingface.co/Qwen) is the Large Language Model family built by Alibaba Cloud."]
 [5666, "charlie-marsh", ""]
 [5667, "o1", "OpenAI\u2019s [o1 family](https://openai.com/o1/) of models."]
 [5668, "bryan-cantrill", ""]
@@ -5341,3 +5341,4 @@
 [5842, "alex-komoroske", ""]
 [5843, "prompt-caching", "Some LLM providers offer a feature where common prompt prefixes can be cached, providing a performance boost and price reduction."]
 [5864, "openai-operator", "[Operator](https://openai.com/index/introducing-operator/) is OpenAI's cloud-hosted browser automation \"agent\"."]
+[5865, "long-context", "Tracking how LLMs are getting better at accepting large amounts of input."]
