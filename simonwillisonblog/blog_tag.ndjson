@@ -5343,3 +5343,4 @@
 [5865, "long-context", "Tracking how LLMs are getting better at accepting large amounts of input."]
 [5866, "paul-gauthier", ""]
 [5867, "benjamin-breen", ""]
+[5868, "llama-cpp", "[llama.cpp](https://github.com/ggerganov/llama.cpp) is an LLM inference library written in C/C++."]
