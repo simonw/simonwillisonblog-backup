@@ -5347,3 +5347,4 @@
 [5871, "datasette-public-office-hours", "We run these public office hours community livestream sessions once or twice a month on the [Datasette Discord](https://datasette.io/discord)."]
 [5872, "limbo", "[Limbo](https://github.com/tursodatabase/limbo) is an implementation of a SQLite-compatible database engine in Rust."]
 [5873, "webgl", ""]
+[5874, "apsw", ""]
