@@ -788,7 +788,6 @@
 [916, "farukates", 1385]
 [917, "screenreaders", 3674]
 [918, "screenwriting", 4784]
-[919, "screenscraping", 3675]
 [920, "ical", 1903]
 [925, "jailbreak", 2068]
 [958, "multi-modal-llms", 5870]
@@ -797,3 +796,5 @@
 [961, "rufuspollock", 3591]
 [962, "benchmark", 364]
 [963, "benchmarking", 364]
+[964, "screen-scraping", 3667]
+[965, "screenscraping", 3667]
