@@ -5345,3 +5345,4 @@
 [5874, "apsw", ""]
 [5875, "sam-altman", ""]
 [5876, "sqlite-busy", "The `SQLITE_BUSY` error - if you're seeing it in WAL mode that's probably because you aren't using `BEGIN IMMEDIATE` on all of your transactions that perform at least one write."]
+[5877, "grok", "The Grok family of LLMs from [xAI](https://x.ai/)."]
