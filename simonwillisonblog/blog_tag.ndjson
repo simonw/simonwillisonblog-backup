@@ -5348,3 +5348,4 @@
 [5897, "ai2", "Ai2 is the [Allen Institute for Artificial Intelligence](https://allenai.org/)."]
 [5930, "podcast-appearances", "Times when I went on a podcast."]
 [5931, "view-transitions", "[CSS view transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_view_transitions) and the [view transition JavaScript API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API)."]
+[5932, "deep-research", "The pattern where LLM tools put together a report based on many searches chained together. Also the name of similar products from Google Gemini, OpenAI and Perplexity."]
