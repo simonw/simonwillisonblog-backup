@@ -4170,7 +4170,6 @@
 [4235, "transcripts", ""]
 [4236, "transformers", ""]
 [4237, "transforms", ""]
-[4238, "transitions", ""]
 [4239, "translate", ""]
 [4240, "translation", ""]
 [4241, "transport", ""]
@@ -5348,3 +5347,4 @@
 [5877, "grok", "The Grok family of LLMs from [xAI](https://x.ai/)."]
 [5897, "ai2", "Ai2 is the [Allen Institute for Artificial Intelligence](https://allenai.org/)."]
 [5930, "podcast-appearances", "Times when I went on a podcast."]
+[5931, "view-transitions", "[CSS view transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_view_transitions) and the [view transition JavaScript API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API)."]
