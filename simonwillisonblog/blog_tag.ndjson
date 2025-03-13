@@ -1052,7 +1052,7 @@
 [1068, "distutils", ""]
 [1069, "diveintopython", ""]
 [1070, "django", "The [Django](https://www.djangoproject.com/) web framework."]
-[1071, "djangoadmin", ""]
+[1071, "django-admin", ""]
 [1072, "djangoadvent", ""]
 [1073, "djangobatchadmin", ""]
 [1074, "django-book", ""]
