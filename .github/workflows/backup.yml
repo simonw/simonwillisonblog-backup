@@ -58,19 +58,23 @@ jobs:
           --table django_content_type \
           --table redirects_redirect
         sqlite-utils tables simonwillisonblog.db --counts --columns
-    - name: Redact passwords
+    - name: Various database modifications
       run: |-
+        # Redact passwords
         sqlite-utils simonwillisonblog.db "update auth_user set password = null"
-    - name: Delete draft posts
-      run: |-
+
+        # Remove draft posts
         sqlite-utils simonwillisonblog.db "delete from blog_entry where is_draft = 1"
         sqlite-utils simonwillisonblog.db "delete from blog_blogmark where is_draft = 1"
         sqlite-utils simonwillisonblog.db "delete from blog_quotation where is_draft = 1"
-    - name: Remove un-interesting search_document columns
-      run: |-
+
+        # Remove un-interesting search_document columns
         sqlite-utils transform simonwillisonblog.db blog_blogmark --drop search_document
         sqlite-utils transform simonwillisonblog.db blog_entry --drop search_document
         sqlite-utils transform simonwillisonblog.db blog_quotation --drop search_document
+
+        # Unique index on blog_tag.tag so Datasette uses it as a foreign key label
+        sqlite-utils create-index simonwillisonblog.db blog_tag tag --unique
     - name: Convert to newline-delimited JSON
       run: |-
         rm simonwillisonblog/* || true
