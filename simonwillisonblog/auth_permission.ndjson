@@ -87,3 +87,7 @@
 [132, "Can change live update", 116, "change_liveupdate"]
 [133, "Can delete live update", 116, "delete_liveupdate"]
 [134, "Can view live update", 116, "view_liveupdate"]
+[164, "Can add note", 149, "add_note"]
+[165, "Can change note", 149, "change_note"]
+[166, "Can delete note", 149, "delete_note"]
+[167, "Can view note", 149, "view_note"]

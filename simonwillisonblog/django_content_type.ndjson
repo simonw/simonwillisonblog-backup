@@ -20,3 +20,4 @@
 [83, "django_http_debug", "debugendpoint"]
 [84, "django_http_debug", "requestlog"]
 [116, "blog", "liveupdate"]
+[149, "blog", "note"]
