@@ -5355,3 +5355,4 @@
 [5938, "vibe-coding", "As [defined here](https://simonwillison.net/2025/Feb/6/andrej-karpathy/) - not the same thing as [AI-assisted programming](https://simonwillison.net/tags/ai-assisted-programming/), though there's some overlap."]
 [5939, "martin-fowler", ""]
 [5940, "prince-canuma", ""]
+[5941, "model-context-protocol", "[Model Context Proocol](https://modelcontextprotocol.io/introduction) (MCP) is an open protocol that standardizes how applications provide context to and tools to LLMs."]
