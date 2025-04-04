@@ -5071,7 +5071,7 @@
 [5274, "misinformation", ""]
 [5275, "ripgrep", ""]
 [5276, "vitess", ""]
-[5277, "baked-data", ""]
+[5277, "baked-data", "The [Baked Data](https://simonwillison.net/2021/Jul/28/baked-data/) architectural pattern."]
 [5278, "craig-kerstiens", ""]
 [5311, "litestream", ""]
 [5312, "vaccinate-ca", ""]
