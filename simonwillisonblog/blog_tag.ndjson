@@ -5361,3 +5361,4 @@
 [5945, "vincent-d-warmerdam", ""]
 [5946, "troy-hunt", ""]
 [5947, "openrouter", ""]
+[5948, "files-to-prompt", "[files-to-prompt](https://github.com/simonw/files-to-prompt) concatenate a directory full of files into a single prompt for use with LLMs."]
