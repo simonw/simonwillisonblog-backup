@@ -5230,7 +5230,7 @@
 [5498, "interpretability", ""]
 [5499, "recall", "Microsoft Recall is a feature planned for Windows 11 that allows users to search through automated screenshots taken of their previous activity on their PC."]
 [5500, "hamel-husain", ""]
-[5501, "markdown-exfiltration", "**Markdown Exfiltration** is a [prompt injection](https://simonwillison.net/tags/promptinjection/) attack against chatbots that have access to private information and can render Markdown images. An attacker can trick the bot into rendering an image that leaks data encoded in the URL to an external server."]
+[5501, "exfiltration-attacks", "**Exfiltration attacks** are [prompt injection](https://simonwillison.net/tags/promptinjection/) attacks against chatbots that have access to private information, where that information is [exfiltrated](https://en.wikipedia.org/wiki/Data_exfiltration) by the attacker. One common form of this is **Markdown exfiltration** where an attacker tricks the bot into rendering a Markdown image that leaks data encoded in the URL to an external server."]
 [5534, "andreas-kling", ""]
 [5567, "vs-code", "Microsoft's partially open source text editor [Visual Studio Code](https://code.visualstudio.com/)."]
 [5568, "ladybird", "[Ladybird](https://ladybird.org/) is \"a truly independent web browser\"."]
