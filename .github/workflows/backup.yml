@@ -52,6 +52,8 @@ jobs:
           --table blog_entry_tags \
           --table blog_quotation \
           --table blog_quotation_tags \
+          --table blog_note \
+          --table blog_note_tags \
           --table blog_tag \
           --table blog_previoustagname \
           --table blog_series \
