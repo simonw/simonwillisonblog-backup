@@ -1,0 +1,16 @@
+{
+    "name": "blog_note",
+    "columns": [
+        "id",
+        "created",
+        "slug",
+        "metadata",
+        "search_document",
+        "import_ref",
+        "card_image",
+        "is_draft",
+        "body",
+        "series_id"
+    ],
+    "schema": "CREATE TABLE \"blog_note\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [body] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id])\n)"
+}
