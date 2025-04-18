@@ -5270,7 +5270,7 @@
 [5637, "evals", "Evaluations and benchmarks of AI systems, for example to compare different models and prompting strategies."]
 [5638, "oxide", ""]
 [5639, "gov-uk", ""]
-[5640, "uv", ""]
+[5640, "uv", "[uv](https://github.com/astral-sh/uv) is an \"extremely fast Python package and project manager, written in Rust\"."]
 [5641, "astral", ""]
 [5642, "cors", "CORS is [Cross-origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), a mechanism by which websites can make APIs available to JavaScript running on other domains around the web."]
 [5643, "samesite", ""]
