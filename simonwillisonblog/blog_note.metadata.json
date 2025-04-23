@@ -10,7 +10,8 @@
         "card_image",
         "is_draft",
         "body",
-        "series_id"
+        "series_id",
+        "title"
     ],
-    "schema": "CREATE TABLE \"blog_note\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [body] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id])\n)"
+    "schema": "CREATE TABLE \"blog_note\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [body] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id]),\n   [title] TEXT\n)"
 }
