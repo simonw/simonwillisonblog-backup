@@ -5360,7 +5360,7 @@
 [5947, "openrouter", ""]
 [5948, "files-to-prompt", "[files-to-prompt](https://github.com/simonw/files-to-prompt) concatenate a directory full of files into a single prompt for use with LLMs."]
 [5949, "john-carmack", ""]
-[5950, "lm-arena", "[LM Arena](https://blog.lmarena.ai/about/) is the software platform used by [Chatbot Arena](https://lmarena.ai/)."]
+[5950, "chatbot-arena", "The [Chatbot Arena](https://lmarena.ai/) ranks LLMs based on votes from a community of users for the best response from anonymized model pairs."]
 [5951, "seth-michael-larson", ""]
 [5952, "carlton-gibson", ""]
 [5953, "image-segmentation", ""]
