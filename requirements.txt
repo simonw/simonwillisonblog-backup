@@ -6,3 +6,4 @@ sqlite-comprehend>=0.2.1
 sqlite-utils
 datasette>=0.64.2
 datasette-sqlite-regex
+datasette-publish-fly
