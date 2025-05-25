@@ -187,7 +187,6 @@ jobs:
           --app simonwillisonblog-backup \
           --branch 1.0a2 \
           --extra-options "--setting sql_time_limit_ms 15000 --setting truncate_cells_html 10000" \
-          --service simonwillisonblog \
           --install packaging \
           --install datasette-block-robots \
           --install datasette-graphql \
