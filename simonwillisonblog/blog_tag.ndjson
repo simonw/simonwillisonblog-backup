@@ -5374,3 +5374,5 @@
 [5968, "anthony-shaw", ""]
 [5969, "newsletter", "Posts about my [weekly newsletter](https://simonw.substack.com/) or [monthly newsletter for sponsors](https://github.com/sponsors/simonw)."]
 [5970, "kenton-varda", ""]
+[5972, "coding-agents", "Systems where an LLM writes code which is then compiled, executed, tested or otherwise exercised by tools in a loop."]
+[5973, "swift", ""]
