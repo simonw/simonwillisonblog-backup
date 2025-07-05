@@ -5382,3 +5382,4 @@
 [5979, "lethal-trifecta", "Any time you grant an LLM-based system access to private data, exposure to untrusted content, and the ability to externally communicate you have [a nasty security hole](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/). See [exfiltration-attacks](https://simonwillison.net/tags/exfiltration-attacks/) for more examples."]
 [5980, "lm-studio", "[LM Studio](https://lmstudio.ai/) is a desktop application for running local LLMs."]
 [5996, "craig-saila", ""]
+[5997, "cursor", ""]
