@@ -3972,7 +3972,6 @@
 [4049, "taconite", ""]
 [4050, "tagging", ""]
 [4051, "tagmaps", ""]
-[4052, "tags", ""]
 [4053, "tailor", ""]
 [4054, "tailrank", ""]
 [4055, "taiwan", ""]
@@ -5387,3 +5386,4 @@
 [5999, "smarty", "[Smarty](https://www.smarty.net/) is a template engine for PHP."]
 [6000, "rachel-kroll", ""]
 [6001, "paul-kedrosky", ""]
+[6002, "system-prompts", "The hidden prompts that LLM applications use to specify how they should behave."]
