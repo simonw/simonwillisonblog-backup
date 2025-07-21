@@ -2488,7 +2488,6 @@
 [2538, "mathematics", ""]
 [2539, "mathiasmeyer", ""]
 [2540, "mathml", ""]
-[2541, "maths", ""]
 [2542, "matrices", ""]
 [2543, "matrix", ""]
 [2544, "matt-biddulph", ""]
@@ -5387,3 +5386,4 @@
 [6000, "rachel-kroll", ""]
 [6001, "paul-kedrosky", ""]
 [6002, "system-prompts", "The hidden prompts that LLM applications use to specify how they should behave."]
+[6003, "daniel-litt", ""]
