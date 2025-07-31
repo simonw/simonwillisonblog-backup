@@ -3796,7 +3796,6 @@
 [3872, "southkorea", ""]
 [3873, "soviet", ""]
 [3874, "space", ""]
-[3875, "spaceinvaders", ""]
 [3876, "spacescience", ""]
 [3877, "spaceshuttle", ""]
 [3878, "spam", ""]
@@ -5389,3 +5388,4 @@
 [6003, "daniel-litt", ""]
 [6004, "cocktails", ""]
 [6029, "ai-in-china", "See also my tags for [Qwen](https://simonwillison.net/tags/qwen/) and [DeepSeek](https://simonwillison.net/tags/deepseek)."]
+[6030, "space-invaders", "Results for my simple LLM benchmark \"Write an HTML and JavaScript page implementing space invaders\""]
