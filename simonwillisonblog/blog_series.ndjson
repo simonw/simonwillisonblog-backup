@@ -14,3 +14,4 @@
 [47, "2024-12-22T19:53:23+00:00", "blogging", "How I blog", "Posts about this blog and how I approach writing online."]
 [48, "2025-01-04T19:12:07+00:00", "llms-annual-review", "LLMs annual review", "Posts where I attempt to summarize the previous year (or sometimes six months) of developments in the field of Large Language Models."]
 [80, "2025-05-05T17:38:37+00:00", "llm-releases", "New releases of LLM", "Releases of [LLM](https://llm.datasette.io/), my command-line tool and Python library for interacting with Large Language Models."]
+[113, "2025-08-07T17:35:43+00:00", "gpt-5", "GPT-5", "My posts following the launch of OpenAI's GPT-5 model."]
