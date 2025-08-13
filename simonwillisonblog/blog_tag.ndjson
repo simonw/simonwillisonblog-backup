@@ -5393,3 +5393,4 @@
 [6033, "asynchronous-coding-agents", "Tools like OpenAI Codex and Jules that can be set a task and will then check out and iterate on code and submit the proposed change as a pull request."]
 [6034, "gpt-5", ""]
 [6035, "ivan-fioravanti", ""]
+[6036, "corey-quinn", ""]
