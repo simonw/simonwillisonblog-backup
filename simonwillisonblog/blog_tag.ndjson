@@ -215,7 +215,7 @@
 [220, "arturbergman", ""]
 [221, "as3", ""]
 [222, "ascii", ""]
-[223, "asciiart", ""]
+[223, "ascii-art", ""]
 [224, "asf", ""]
 [225, "ash-patel", ""]
 [226, "asklater", ""]
@@ -5396,3 +5396,4 @@
 [6037, "artificial-analysis", "[Artificial Analysis](https://artificialanalysis.ai/) is an independent AI benchmarking and analysis company."]
 [6038, "jules", "[Jules](https://jules.google/) is an asynchronous coding agent from Google."]
 [6062, "geoffrey-huntley", ""]
+[6063, "rich", "[Rich](https://github.com/Textualize/rich) is a Python library for building terminal applications."]
