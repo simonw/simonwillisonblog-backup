@@ -5398,3 +5398,4 @@
 [6096, "moonshot", "[Moonshot](https://www.moonshot.cn/) are the Chinese AI lab behind the Kimi family of LLMs."]
 [6097, "digital-literacy", ""]
 [6098, "codex-cli", "OpenAI's [Codex CLI](https://github.com/openai/codex) tool, not the same thing as [Codex cloud](https://developers.openai.com/codex/cloud)."]
+[6099, "llm-memory", "Features that add \"memory\" to LLM systems, allowing them to consult information from previous interactions."]
