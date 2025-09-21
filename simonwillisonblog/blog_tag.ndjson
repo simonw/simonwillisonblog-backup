@@ -5398,3 +5398,4 @@
 [6098, "codex-cli", "OpenAI's [Codex CLI](https://github.com/openai/codex) tool, not the same thing as [Codex cloud](https://developers.openai.com/codex/cloud)."]
 [6099, "llm-memory", "Features that add \"memory\" to LLM systems, allowing them to consult information from previous interactions."]
 [6100, "context-engineering", ""]
+[6101, "xai", ""]
