@@ -5398,3 +5398,4 @@
 [6100, "context-engineering", ""]
 [6101, "xai", ""]
 [6102, "disclosures", "When I receive value (financial or in-kind) connected to my writing such as travel, accommodation, event access, review units, reimbursements, or honoraria, I disclose it here. See also [my disclosures policy](https://simonwillison.net/about/#disclosures)."]
+[6103, "sub-agents", "The pattern where an LLM agent fires up a \"sub-agent\" - a separate LLM agent with a fresh token context that solves a single problem and provides the answer back to the parent."]
