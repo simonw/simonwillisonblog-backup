@@ -1033,7 +1033,6 @@
 [1052, "dirigibles", ""]
 [1053, "disambiguated", ""]
 [1054, "disambiguatedurls", ""]
-[1055, "disclosure", ""]
 [1056, "discoursedb", ""]
 [1057, "discovery", ""]
 [1058, "discoverychannel", ""]
@@ -5398,3 +5397,4 @@
 [6099, "llm-memory", "Features that add \"memory\" to LLM systems, allowing them to consult information from previous interactions."]
 [6100, "context-engineering", ""]
 [6101, "xai", ""]
+[6102, "disclosures", "When I receive value (financial or in-kind) connected to my writing such as travel, accommodation, event access, review units, reimbursements, or honoraria, I disclose it here. See also [my disclosures policy](https://simonwillison.net/about/#disclosures)."]
