@@ -91,3 +91,7 @@
 [165, "Can change note", 149, "change_note"]
 [166, "Can delete note", 149, "delete_note"]
 [167, "Can view note", 149, "view_note"]
+[197, "Can add newsletter", 182, "add_newsletter"]
+[198, "Can change newsletter", 182, "change_newsletter"]
+[199, "Can delete newsletter", 182, "delete_newsletter"]
+[200, "Can view newsletter", 182, "view_newsletter"]
