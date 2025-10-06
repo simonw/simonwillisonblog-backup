@@ -201,7 +201,7 @@ jobs:
           -m metadata.yml \
           --app simonwillisonblog-backup \
           --branch 1.0a2 \
-          --extra-options "--setting sql_time_limit_ms 15000 --setting truncate_cells_html 10000" \
+          --extra-options "--setting sql_time_limit_ms 15000 --setting truncate_cells_html 10000 --setting allow_facet off" \
           --install packaging \
           --install datasette-block-robots \
           --install datasette-graphql \
@@ -213,5 +213,4 @@ jobs:
           --install "datasette-explain>=0.1a2" \
           --install "datasette-faiss>=0.2.1" \
           --install datasette-simple-html \
-          --install datasette-dateutil \
-          --setting allow_facet off
+          --install datasette-dateutil
