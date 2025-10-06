@@ -126,6 +126,14 @@ jobs:
       continue-on-error: true
       run: |-
         wget -q https://datasette.simonwillison.net/simonwillisonblog.db
+    - name: Vacuum restored database
+      run: |-
+        if [ -f simonwillisonblog.db ]; then
+          if ! sqlite3 simonwillisonblog.db 'VACUUM;'; then
+            echo "::warning::sqlite3 VACUUM failed; deleting simonwillisonblog.db and continuing"
+            rm -f simonwillisonblog.db || true
+          fi
+        fi
     - name: Build database
       run: |-
         sqlite-diffable load simonwillisonblog.db simonwillisonblog --replace
