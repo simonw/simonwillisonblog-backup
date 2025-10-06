@@ -198,4 +198,5 @@ jobs:
           --install "datasette-explain>=0.1a2" \
           --install "datasette-faiss>=0.2.1" \
           --install datasette-simple-html \
-          --install datasette-dateutil
+          --install datasette-dateutil \
+          --setting allow_facet off
