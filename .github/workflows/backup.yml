@@ -130,8 +130,15 @@ jobs:
       run: |-
         if [ -f simonwillisonblog.db ]; then
           if ! sqlite3 simonwillisonblog.db 'VACUUM;'; then
-            echo "::warning::sqlite3 VACUUM failed; deleting simonwillisonblog.db and continuing"
-            rm -f simonwillisonblog.db || true
+            echo "::warning::sqlite3 VACUUM failed; attempting recovery"
+            sqlite3 simonwillisonblog.db ".recover" | sqlite3 recovered.db
+            if sqlite3 recovered.db 'VACUUM;'; then
+              echo "::notice::Recovery successful, using recovered database"
+              mv recovered.db simonwillisonblog.db
+            else
+              echo "::warning::Recovery failed; deleting simonwillisonblog.db and continuing"
+              rm -f simonwillisonblog.db recovered.db || true
+            fi
           fi
         fi
     - name: Build database
