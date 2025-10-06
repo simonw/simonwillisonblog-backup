@@ -4719,7 +4719,6 @@
 [4815, "mitlicense", ""]
 [4816, "tobeytailor", ""]
 [4817, "andrew-sparrow", ""]
-[4818, "liveblogging", ""]
 [4819, "detecting", ""]
 [4820, "diveintohtml5", ""]
 [4821, "opencart", ""]
@@ -5406,3 +5405,4 @@
 [6108, "prompt-to-app", "Tools that build you a full working application based on a prompt."]
 [6109, "theo-browne", ""]
 [6110, "dspy", ""]
+[6111, "live-blog", "Times when I live blogged during an event."]
