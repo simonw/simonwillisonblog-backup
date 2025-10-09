@@ -5404,3 +5404,4 @@
 [6110, "dspy", ""]
 [6111, "live-blog", "Times when I live blogged during an event."]
 [6112, "computer-use", "Computer use models are AI models specifically designed to operate a computer via a GUI."]
+[6113, "parallel-agents", "Running multiple coding agents in parallel"]
