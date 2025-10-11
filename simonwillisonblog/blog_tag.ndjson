@@ -5359,7 +5359,7 @@
 [5972, "coding-agents", "Systems where an LLM writes code which is then compiled, executed, tested or otherwise exercised by tools in a loop."]
 [5973, "swift", ""]
 [5974, "ink-and-switch", ""]
-[5975, "claude-code", "[Claude Code](https://www.anthropic.com/claude-code) is Anthropic's terminal agent, enabling Claude to run tools in a loop on your own machine."]
+[5975, "claude-code", "[Claude Code](https://www.anthropic.com/claude-code) is Anthropic's terminal coding agent, enabling Claude to run tools in a loop on your own machine."]
 [5976, "paper-review", "Posts where I do a deep dive into an academic paper."]
 [5977, "andrew-ng", ""]
 [5978, "agent-definitions", "I collect definitions of \"agents\"."]
