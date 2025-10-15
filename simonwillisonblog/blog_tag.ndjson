@@ -845,7 +845,7 @@
 [861, "cryptography", ""]
 [862, "csharp", ""]
 [863, "csi", ""]
-[864, "csrf", ""]
+[864, "csrf", "[Cross-site request forgery](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF) attacks against web applications."]
 [865, "css", ""]
 [866, "css3", ""]
 [867, "cssaintrocketscience", ""]
