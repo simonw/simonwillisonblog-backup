@@ -3713,7 +3713,6 @@
 [3795, "sketchnotes", ""]
 [3796, "sketchpad", ""]
 [3797, "sketchup", ""]
-[3798, "skills", ""]
 [3799, "skillswap", ""]
 [3800, "skillswapbrighton", ""]
 [3801, "skin", ""]
@@ -5407,3 +5406,4 @@
 [6113, "parallel-agents", "Running multiple coding agents in parallel"]
 [6114, "jesse-vincent", ""]
 [6115, "chatgpt-plugins", ""]
+[6116, "skills", "Originally introduced [by Anthropic](https://simonwillison.net/2025/Oct/16/claude-skills/), Skills are Markdown files that teach LLM systems new tricks."]
