@@ -5377,7 +5377,7 @@
 [6030, "space-invaders", "Results for my simple LLM benchmark \"Write an HTML and JavaScript page implementing space invaders\""]
 [6031, "christina-wodtke", ""]
 [6032, "gpt-oss", "OpenAI's family of open weight models."]
-[6033, "asynchronous-coding-agents", "Tools like OpenAI Codex and Jules that can be set a task and will then check out and iterate on code and submit the proposed change as a pull request."]
+[6033, "async-coding-agents", "**Asynchronous coding agents** are tools like OpenAI Codex and Jules that can be set a task and will then check out and iterate on code in their own hosted environment and submit the proposed change as a pull request."]
 [6034, "gpt-5", ""]
 [6035, "ivan-fioravanti", ""]
 [6036, "corey-quinn", ""]
