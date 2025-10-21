@@ -5408,3 +5408,4 @@
 [6115, "chatgpt-plugins", ""]
 [6116, "skills", "Originally introduced [by Anthropic](https://simonwillison.net/2025/Oct/16/claude-skills/), Skills are Markdown files that teach LLM systems new tricks."]
 [6117, "browser-agents", "Agent tools that live in web browsers."]
+[6118, "brave", ""]
