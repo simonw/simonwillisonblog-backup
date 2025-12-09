@@ -95,3 +95,7 @@
 [198, "Can change newsletter", 182, "change_newsletter"]
 [199, "Can delete newsletter", 182, "delete_newsletter"]
 [200, "Can view newsletter", 182, "view_newsletter"]
+[230, "Can add Tag Merge", 215, "add_tagmerge"]
+[231, "Can change Tag Merge", 215, "change_tagmerge"]
+[232, "Can delete Tag Merge", 215, "delete_tagmerge"]
+[233, "Can view Tag Merge", 215, "view_tagmerge"]
