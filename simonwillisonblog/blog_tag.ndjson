@@ -5362,7 +5362,7 @@
 [6003, "daniel-litt", ""]
 [6004, "cocktails", ""]
 [6029, "ai-in-china", "See also my tags for [Qwen](https://simonwillison.net/tags/qwen/) and [DeepSeek](https://simonwillison.net/tags/deepseek)."]
-[6030, "space-invaders", "Results for my simple LLM benchmark \"Write an HTML and JavaScript page implementing space invaders\""]
+[6030, "space-invaders", "Results for my simple LLM benchmark \"Write an HTML and JavaScript page implementing space invaders\" - try them at [space-invaders.simonwillison.net](https://space-invaders.simonwillison.net/)"]
 [6031, "christina-wodtke", ""]
 [6032, "gpt-oss", "OpenAI's family of open weight models."]
 [6033, "async-coding-agents", "**Asynchronous coding agents** are tools like OpenAI Codex and Jules that can be set a task and will then check out and iterate on code in their own hosted environment and submit the proposed change as a pull request."]
