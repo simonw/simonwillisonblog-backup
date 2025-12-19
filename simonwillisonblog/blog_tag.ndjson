@@ -5411,3 +5411,4 @@
 [6174, "janky-licenses", "\"Open source\" and open weight licenses that don't match the [OSI definition](https://opensource.org/osd)"]
 [6175, "kent-beck", ""]
 [6176, "ocaml", ""]
+[6177, "gpt-codex", "OpenAI's GPT-X Codex family of specialist coding models."]
