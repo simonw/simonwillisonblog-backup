@@ -5412,3 +5412,4 @@
 [6196, "claude-cowork", ""]
 [6197, "conformance-suites", "Test suites that are designed to be run against different implementations of the same protocol or standard to help ensure they are compatible with each other."]
 [6198, "browser-challenge", "Attempts to create a web browser - or at the very least an HTML+CSS renderer - using assistance from coding agents."]
+[6199, "peter-steinberger", ""]
