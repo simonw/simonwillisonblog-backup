@@ -5413,3 +5413,4 @@
 [6197, "conformance-suites", "Test suites that are designed to be run against different implementations of the same protocol or standard to help ensure they are compatible with each other."]
 [6198, "browser-challenge", "Attempts to create a web browser - or at the very least an HTML+CSS renderer - using assistance from coding agents."]
 [6199, "peter-steinberger", ""]
+[6200, "openclaw", "[OpenClaw](https://openclaw.ai/) is an open source agent tool that integrates with multiple messaging platforms while running on your own device."]
