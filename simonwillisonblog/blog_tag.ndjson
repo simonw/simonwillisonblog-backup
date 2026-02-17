@@ -5418,3 +5418,4 @@
 [6227, "ai-bias", ""]
 [6228, "ai-misuse", "Misuse of AI systems and LLMs."]
 [6229, "cognitive-debt", "We take on cognitive debt when AI accelerated development means we can no longer maintain a robust mental model of what our software does and how it works."]
+[6230, "inference-speed", "How *fast* can a model serve tokens?"]
