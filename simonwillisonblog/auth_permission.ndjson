@@ -99,3 +99,7 @@
 [231, "Can change Tag Merge", 215, "change_tagmerge"]
 [232, "Can delete Tag Merge", 215, "delete_tagmerge"]
 [233, "Can view Tag Merge", 215, "view_tagmerge"]
+[263, "Can add beat", 248, "add_beat"]
+[264, "Can change beat", 248, "change_beat"]
+[265, "Can delete beat", 248, "delete_beat"]
+[266, "Can view beat", 248, "view_beat"]
