@@ -103,3 +103,7 @@
 [264, "Can change beat", 248, "change_beat"]
 [265, "Can delete beat", 248, "delete_beat"]
 [266, "Can view beat", 248, "view_beat"]
+[267, "Can add sponsor message", 249, "add_sponsormessage"]
+[268, "Can change sponsor message", 249, "change_sponsormessage"]
+[269, "Can delete sponsor message", 249, "delete_sponsormessage"]
+[270, "Can view sponsor message", 249, "view_sponsormessage"]
