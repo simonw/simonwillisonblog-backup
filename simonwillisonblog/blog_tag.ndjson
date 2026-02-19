@@ -5262,7 +5262,7 @@
 [5798, "smollm", "[SmolLM](https://huggingface.co/blog/smollm) is a series of small Large Language Models by Hugging Face."]
 [5799, "structured-extraction", "Using LLMs to extract structured data from unstructured text and images."]
 [5800, "logan-kilpatrick", ""]
-[5802, "pelican-riding-a-bicycle", "My [benchmark for LLMs](https://simonwillison.net/2025/Jun/6/six-months-in-llms/): \"Generate an SVG of a pelican riding a bicycle\".\r\n\r\n\"User might be a kid playing with words\" [according to Qwen3-4B-Thinking](https://simonwillison.net/2025/Aug/10/qwen3-4b/)."]
+[5802, "pelican-riding-a-bicycle", "My [benchmark for LLMs](https://simonwillison.net/2025/Jun/6/six-months-in-llms/): \"Generate an SVG of a pelican riding a bicycle\". Here's my answer to [what happens if AI labs train for pelicans riding bicycles?](https://simonwillison.net/2025/Nov/13/training-for-pelicans-riding-bicycles/). \"User might be a kid playing with words\" [according to Qwen3-4B-Thinking](https://simonwillison.net/2025/Aug/10/qwen3-4b/)."]
 [5803, "amanda-askell", ""]
 [5831, "pydantic", "[Pydantic](https://docs.pydantic.dev/) is a data validation library for Python based around Python's type annotation feature."]
 [5832, "text-to-video", ""]
