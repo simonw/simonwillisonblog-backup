@@ -119,3 +119,7 @@
 [280, "Can change chapter change", 252, "change_chapterchange"]
 [281, "Can delete chapter change", 252, "delete_chapterchange"]
 [282, "Can view chapter change", 252, "view_chapterchange"]
+[283, "Can add guide section", 253, "add_guidesection"]
+[284, "Can change guide section", 253, "change_guidesection"]
+[285, "Can delete guide section", 253, "delete_guidesection"]
+[286, "Can view guide section", 253, "view_guidesection"]
