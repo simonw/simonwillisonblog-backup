@@ -1,0 +1,11 @@
+{
+    "name": "blog_guidesection",
+    "columns": [
+        "id",
+        "title",
+        "slug",
+        "order",
+        "guide_id"
+    ],
+    "schema": "CREATE TABLE \"blog_guidesection\" (\n   [id] INTEGER PRIMARY KEY,\n   [title] TEXT,\n   [slug] TEXT,\n   [order] INTEGER,\n   [guide_id] INTEGER REFERENCES [blog_guide]([id])\n)"
+}
