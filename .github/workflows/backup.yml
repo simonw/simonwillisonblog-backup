@@ -56,9 +56,9 @@ jobs:
           --table blog_note_tags \
           --table blog_tag \
           --table blog_previoustagname \
-          --table blog_guide \
-          --table blog_chapter \
-          --table blog_guidesection \
+          --table guide_guide \
+          --table guide_chapter \
+          --table guide_guidesection \
           --table blog_series \
           --table django_content_type \
           --table redirects_redirect
@@ -72,9 +72,9 @@ jobs:
         sqlite-utils simonwillisonblog.db "delete from blog_entry where is_draft = 1"
         sqlite-utils simonwillisonblog.db "delete from blog_blogmark where is_draft = 1"
         sqlite-utils simonwillisonblog.db "delete from blog_quotation where is_draft = 1"
-        sqlite-utils simonwillisonblog.db "delete from blog_guidesection where guide_id in (select id from blog_guide where is_draft = 1)"
-        sqlite-utils simonwillisonblog.db "delete from blog_guide where is_draft = 1"
-        sqlite-utils simonwillisonblog.db "delete from blog_chapter where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from guide_guidesection where guide_id in (select id from guide_guide where is_draft = 1)"
+        sqlite-utils simonwillisonblog.db "delete from guide_guide where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from guide_chapter where is_draft = 1"
 
         # Remove un-interesting search_document columns
         sqlite-utils transform simonwillisonblog.db blog_blogmark --drop search_document
