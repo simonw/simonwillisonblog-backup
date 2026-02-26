@@ -1,0 +1,21 @@
+{
+    "name": "guides_chapter",
+    "columns": [
+        "id",
+        "created",
+        "slug",
+        "metadata",
+        "search_document",
+        "import_ref",
+        "card_image",
+        "is_draft",
+        "updated",
+        "title",
+        "body",
+        "order",
+        "series_id",
+        "guide_id",
+        "section_id"
+    ],
+    "schema": "CREATE TABLE \"guides_chapter\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [updated] TEXT,\n   [title] TEXT,\n   [body] TEXT,\n   [order] INTEGER,\n   [series_id] TEXT REFERENCES [blog_series]([id]),\n   [guide_id] INTEGER REFERENCES [guides_guide]([id]),\n   [section_id] INTEGER REFERENCES [guides_guidesection]([id])\n)"
+}

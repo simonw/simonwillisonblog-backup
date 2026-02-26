@@ -29,3 +29,7 @@
 [251, "blog", "guide"]
 [252, "blog", "chapterchange"]
 [253, "blog", "guidesection"]
+[254, "guides", "chapter"]
+[255, "guides", "chapterchange"]
+[256, "guides", "guide"]
+[257, "guides", "guidesection"]
