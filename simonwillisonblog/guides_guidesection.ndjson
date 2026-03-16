@@ -1,5 +1,6 @@
 [1, "Testing and QA", "testing", 1, 1]
 [2, "Understanding code", "understanding-code", 2, 1]
-[3, "Principles", "principles", 0, 1]
+[3, "Principles", "principles", -1, 1]
 [4, "Appendix", "appendix", 4, 1]
 [5, "Annotated prompts", "annotated-prompts", 3, 1]
+[6, "Getting started", "getting-started", 0, 1]
