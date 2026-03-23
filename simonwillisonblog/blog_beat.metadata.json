@@ -15,7 +15,8 @@
         "commentary",
         "series_id",
         "image_alt",
-        "image_url"
+        "image_url",
+        "note"
     ],
-    "schema": "CREATE TABLE \"blog_beat\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [beat_type] TEXT,\n   [title] TEXT,\n   [url] TEXT,\n   [commentary] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id]),\n   [image_alt] TEXT,\n   [image_url] TEXT\n)"
+    "schema": "CREATE TABLE \"blog_beat\" (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [metadata] TEXT,\n   [search_document] TEXT,\n   [import_ref] TEXT,\n   [card_image] TEXT,\n   [is_draft] INTEGER,\n   [beat_type] TEXT,\n   [title] TEXT,\n   [url] TEXT,\n   [commentary] TEXT,\n   [series_id] TEXT REFERENCES [blog_series]([id]),\n   [image_alt] TEXT,\n   [image_url] TEXT,\n   [note] TEXT\n)"
 }
