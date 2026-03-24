@@ -5424,3 +5424,4 @@
 [6241, "ty", ""]
 [6260, "starlette", "The [Starlette](https://starlette.dev/) Python ASGI web framework."]
 [6261, "site-upgrades", ""]
+[6293, "autoresearch", "Coding agents running experiments to find and combine optimizations for interesting problems."]
