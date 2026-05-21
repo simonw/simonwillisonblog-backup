@@ -5429,3 +5429,4 @@
 [6362, "andy-masley", ""]
 [6363, "contenteditable", ""]
 [6392, "webrtc", ""]
+[6394, "datasette-agent", "An AI assistant for Datasette, see [agent.datasette.io](https://agent.datasette.io/)."]
