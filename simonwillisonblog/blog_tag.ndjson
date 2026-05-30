@@ -5031,7 +5031,7 @@
 [5330, "discord", ""]
 [5331, "electron", ""]
 [5332, "datasette-desktop", "Datasette as an Electron desktop application, at [datasette.io/desktop](https://datasette.io/desktop)"]
-[5333, "serviceworkers", ""]
+[5333, "service-workers", "See MDN on the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)."]
 [5334, "computer-literacy", ""]
 [5367, "jake-archibald", ""]
 [5368, "lukasz-langa", ""]
