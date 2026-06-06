@@ -5432,3 +5432,4 @@
 [6394, "datasette-agent", "An AI assistant for Datasette, see [agent.datasette.io](https://agent.datasette.io/)."]
 [6395, "pi", "The [Pi](https://pi.dev/) agent hardness and coding agent."]
 [6396, "uber", ""]
+[6397, "micropython", "[MicroPython](https://micropython.org) is \"a lean and efficient implementation of the Python 3 programming language\""]
