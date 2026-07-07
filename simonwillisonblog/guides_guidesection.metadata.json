@@ -7,5 +7,5 @@
         "order",
         "guide_id"
     ],
-    "schema": "CREATE TABLE \"guides_guidesection\" (\n   [id] INTEGER PRIMARY KEY,\n   [title] TEXT,\n   [slug] TEXT,\n   [order] INTEGER,\n   [guide_id] INTEGER REFERENCES [guides_guide]([id])\n)"
+    "schema": "CREATE TABLE \"guides_guidesection\" (\n   \"id\" INTEGER PRIMARY KEY,\n   \"title\" TEXT,\n   \"slug\" TEXT,\n   \"order\" INTEGER,\n   \"guide_id\" INTEGER REFERENCES \"guides_guide\"(\"id\")\n)"
 }

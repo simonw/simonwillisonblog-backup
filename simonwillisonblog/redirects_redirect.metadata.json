@@ -7,5 +7,5 @@
         "target",
         "created"
     ],
-    "schema": "CREATE TABLE [redirects_redirect] (\n   [id] INTEGER PRIMARY KEY,\n   [domain] TEXT,\n   [path] TEXT,\n   [target] TEXT,\n   [created] TEXT\n)"
+    "schema": "CREATE TABLE \"redirects_redirect\" (\n   \"id\" INTEGER PRIMARY KEY,\n   \"domain\" TEXT,\n   \"path\" TEXT,\n   \"target\" TEXT,\n   \"created\" TEXT\n)"
 }

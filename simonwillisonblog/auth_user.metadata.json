@@ -13,5 +13,5 @@
         "is_active",
         "date_joined"
     ],
-    "schema": "CREATE TABLE [auth_user] (\n   [id] INTEGER PRIMARY KEY,\n   [password] TEXT,\n   [last_login] TEXT,\n   [is_superuser] INTEGER,\n   [username] TEXT,\n   [first_name] TEXT,\n   [last_name] TEXT,\n   [email] TEXT,\n   [is_staff] INTEGER,\n   [is_active] INTEGER,\n   [date_joined] TEXT\n)"
+    "schema": "CREATE TABLE \"auth_user\" (\n   \"id\" INTEGER PRIMARY KEY,\n   \"password\" TEXT,\n   \"last_login\" TEXT,\n   \"is_superuser\" INTEGER,\n   \"username\" TEXT,\n   \"first_name\" TEXT,\n   \"last_name\" TEXT,\n   \"email\" TEXT,\n   \"is_staff\" INTEGER,\n   \"is_active\" INTEGER,\n   \"date_joined\" TEXT\n)"
 }

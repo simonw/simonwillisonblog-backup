@@ -9,5 +9,5 @@
         "description",
         "is_draft"
     ],
-    "schema": "CREATE TABLE [guides_guide] (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [updated] TEXT,\n   [title] TEXT,\n   [slug] TEXT,\n   [description] TEXT,\n   [is_draft] INTEGER\n)"
+    "schema": "CREATE TABLE \"guides_guide\" (\n   \"id\" INTEGER PRIMARY KEY,\n   \"created\" TEXT,\n   \"updated\" TEXT,\n   \"title\" TEXT,\n   \"slug\" TEXT,\n   \"description\" TEXT,\n   \"is_draft\" INTEGER\n)"
 }

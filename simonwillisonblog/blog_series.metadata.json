@@ -7,5 +7,5 @@
         "title",
         "summary"
     ],
-    "schema": "CREATE TABLE [blog_series] (\n   [id] INTEGER PRIMARY KEY,\n   [created] TEXT,\n   [slug] TEXT,\n   [title] TEXT,\n   [summary] TEXT\n)"
+    "schema": "CREATE TABLE \"blog_series\" (\n   \"id\" INTEGER PRIMARY KEY,\n   \"created\" TEXT,\n   \"slug\" TEXT,\n   \"title\" TEXT,\n   \"summary\" TEXT\n)"
 }
