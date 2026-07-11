@@ -70,10 +70,17 @@ jobs:
         # Redact passwords
         sqlite-utils simonwillisonblog.db "update auth_user set password = null"
 
-        # Remove draft posts
+        # Remove draft posts, including their tag associations
+        sqlite-utils simonwillisonblog.db "delete from blog_entry_tags where entry_id in (select id from blog_entry where is_draft = 1)"
         sqlite-utils simonwillisonblog.db "delete from blog_entry where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_blogmark_tags where blogmark_id in (select id from blog_blogmark where is_draft = 1)"
         sqlite-utils simonwillisonblog.db "delete from blog_blogmark where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_quotation_tags where quotation_id in (select id from blog_quotation where is_draft = 1)"
         sqlite-utils simonwillisonblog.db "delete from blog_quotation where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_note_tags where note_id in (select id from blog_note where is_draft = 1)"
+        sqlite-utils simonwillisonblog.db "delete from blog_note where is_draft = 1"
+        sqlite-utils simonwillisonblog.db "delete from blog_beat_tags where beat_id in (select id from blog_beat where is_draft = 1)"
+        sqlite-utils simonwillisonblog.db "delete from blog_beat where is_draft = 1"
         sqlite-utils simonwillisonblog.db "delete from guides_chapter where is_draft = 1 or guide_id in (select id from guides_guide where is_draft = 1)"
         sqlite-utils simonwillisonblog.db "delete from guides_guidesection where guide_id in (select id from guides_guide where is_draft = 1)"
         sqlite-utils simonwillisonblog.db "delete from guides_guide where is_draft = 1"
