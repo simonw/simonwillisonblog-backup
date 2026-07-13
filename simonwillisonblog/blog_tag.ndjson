@@ -5436,3 +5436,4 @@
 [6458, "onnx", "The [Open Neural Network Exchange](https://onnx.ai) file format."]
 [6459, "mdn", "[MDN](https://developer.mozilla.org/), originally the Mozilla Developer Network, now MDN Web Docs to reflect its cross-browser nature."]
 [6460, "andrew-nesbitt", ""]
+[6461, "datasette-apps", "Use [Datasette Apps](https://github.com/datasette/datasette-apps) to build HTML+JavaScript apps that live inside Datasette."]
