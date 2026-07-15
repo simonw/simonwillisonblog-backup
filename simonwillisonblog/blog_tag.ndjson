@@ -5438,3 +5438,4 @@
 [6460, "andrew-nesbitt", ""]
 [6461, "datasette-apps", "Use [Datasette Apps](https://github.com/datasette/datasette-apps) to build HTML+JavaScript apps that live inside Datasette."]
 [6462, "lobsters", "[Lobsters](https://lobste.rs) is \"a computing-focused community centered around link aggregation and discussion\"."]
+[6463, "dependency-cooldowns", "Avoiding package upgrades until they've been out for long enough to detect likely supply chain attacks."]
