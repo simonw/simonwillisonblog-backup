@@ -5444,3 +5444,4 @@
 [6492, "cat-wu", ""]
 [6493, "boris-cherny", ""]
 [6494, "general-agents", "Claude Code and OpenAI Codex kick-started the [coding agent](https://simonwillison.net/tags/coding-agents/) revolution. General agents go a step beyond that and help automate task that can be achieved by operating a computer."]
+[6495, "openai-hugging-face-incident", "An OpenAI model performed the first widely-reported autonomous cyberattack on another company - Hugging Face - [in July 2026](https://simonwillison.net/2026/Jul/22/openai-cyberattack/)."]
