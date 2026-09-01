@@ -218,4 +218,4 @@ jobs:
           --install "datasette-faiss>=0.2.1" \
           --install datasette-simple-html \
           --install datasette-dateutil \
-          --install datasette-mcp
+          --install "datasette-mcp>=0.2"
