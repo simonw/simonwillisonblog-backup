@@ -20,12 +20,12 @@ jobs:
       change_detected: ${{ steps.commit_and_push.outputs.change_detected }}
     steps:
     - name: Check out repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v7
       with:
-        python-version: "3.10"
-    - uses: actions/cache@v3
+        python-version: "3.13"
+    - uses: actions/cache@v6
       name: Configure pip caching
       with:
         path: ~/.cache/pip
@@ -109,14 +109,14 @@ jobs:
         contains(github.event.workflow_run.head_commit.modified, '.github/workflows/backup.yml') }}
     steps:
     - name: Check out repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
       with:
         ref: main
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v7
       with:
-        python-version: "3.9"
-    - uses: actions/cache@v3
+        python-version: "3.13"
+    - uses: actions/cache@v6
       name: Configure pip caching
       with:
         path: ~/.cache/pip
