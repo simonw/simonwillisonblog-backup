@@ -107,7 +107,7 @@ jobs:
     needs: backup
     if: >
       ${{ inputs.force_deploy || needs.backup.outputs.change_detected || 
-        contains(github.event.workflow_run.head_commit.modified, '.github/workflows/backup.yml') }}
+        github.event_name == 'push' }}
     steps:
     - name: Check out repo
       uses: actions/checkout@v7
@@ -200,25 +200,10 @@ jobs:
     - name: Install Fly
       run: |
         curl -L https://fly.io/install.sh | sh
+    - name: Package Datasette
+      run: bash scripts/package-datasette.sh simonwillisonblog.db deployment
     - name: Deploy to Fly.io
       env:
         FLY_API_TOKEN: ${{ secrets.FLY_TOKEN }}
-      run: |-
-        PATH=$PATH:/home/runner/.fly/bin/ datasette publish fly simonwillisonblog.db \
-          -m metadata.yml \
-          --app simonwillisonblog-backup \
-          --branch 1.0a2 \
-          --extra-options "--setting sql_time_limit_ms 15000 --setting truncate_cells_html 10000 --setting allow_facet off" \
-          --install packaging \
-          --install datasette-block-robots \
-          --install datasette-graphql \
-          --install datasette-search-all \
-          --install "datasette-openai>=0.1a2" \
-          --install "datasette-cookies-for-magic-parameters>=0.1.2" \
-          --install datasette-json-html \
-          --install datasette-sqlite-regex \
-          --install "datasette-explain>=0.1a2" \
-          --install "datasette-faiss>=0.2.1" \
-          --install datasette-simple-html \
-          --install datasette-dateutil \
-          --install "datasette-mcp>=0.2"
+      working-directory: deployment
+      run: /home/runner/.fly/bin/flyctl deploy --app simonwillisonblog-backup --remote-only

@@ -1,0 +1,5 @@
+-r requirements-datasette.txt
+datasette-publish-fly==1.4
+pytest
+pytest-asyncio
+asgi-lifespan

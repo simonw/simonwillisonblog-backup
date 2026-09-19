@@ -4,6 +4,7 @@ psycopg2-binary
 sqlite-diffable
 sqlite-comprehend>=0.2.1
 sqlite-utils
-datasette>=0.64.2
+datasette==1.0a40
 datasette-sqlite-regex
-datasette-publish-fly
+datasette-publish-fly==1.4
+httpx==0.28.1

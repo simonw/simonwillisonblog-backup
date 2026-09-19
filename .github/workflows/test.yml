@@ -1,0 +1,24 @@
+name: Test Datasette
+
+on:
+  push:
+    paths:
+      - '**.py'
+      - '**requirements*.txt'
+      - 'metadata.yml'
+      - 'datasette.yml'
+      - 'scripts/**'
+      - '.github/workflows/**'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+    - uses: actions/setup-python@v7
+      with:
+        python-version: '3.11'
+    - run: pip install -r requirements-test.txt
+    - run: python -m pytest -q
