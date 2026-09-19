@@ -84,6 +84,7 @@ jobs:
         sqlite-utils transform simonwillisonblog.db blog_blogmark --drop search_document
         sqlite-utils transform simonwillisonblog.db blog_entry --drop search_document
         sqlite-utils transform simonwillisonblog.db blog_quotation --drop search_document
+        sqlite-utils transform simonwillisonblog.db blog_note --drop search_document
 
         # Unique index on blog_tag.tag so Datasette uses it as a foreign key label
         sqlite-utils create-index simonwillisonblog.db blog_tag tag --unique
@@ -178,6 +179,7 @@ jobs:
         sqlite-utils enable-fts simonwillisonblog.db blog_quotation quotation source --create-triggers --tokenize porter 2>/dev/null
         sqlite-utils enable-fts simonwillisonblog.db blog_entry title body --create-triggers --tokenize porter 2>/dev/null
         sqlite-utils enable-fts simonwillisonblog.db blog_blogmark link_title via_title commentary --create-triggers --tokenize porter 2>/dev/null
+        sqlite-utils enable-fts simonwillisonblog.db blog_note title note --create-triggers --tokenize porter 2>/dev/null
         set -e
         # Re-populate tables just in case they're missing anything
         sqlite-utils populate-fts simonwillisonblog.db blog_series title summary
@@ -185,6 +187,7 @@ jobs:
         sqlite-utils populate-fts simonwillisonblog.db blog_quotation quotation source
         sqlite-utils populate-fts simonwillisonblog.db blog_entry title body
         sqlite-utils populate-fts simonwillisonblog.db blog_blogmark link_title via_title commentary
+        sqlite-utils populate-fts simonwillisonblog.db blog_note title note
     - name: Copy in latest TILs
       run: |
         wget https://s3.amazonaws.com/til.simonwillison.net/tils.db
