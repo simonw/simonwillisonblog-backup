@@ -1,14 +1,11 @@
 datasette==1.0a40
 packaging
-# datasette-openai imports httpx; Datasette itself now uses httpx2.
-httpx==0.28.1
 datasette-block-robots==1.1.1
 datasette-graphql==3.0a1
 datasette-search-all==1.1.5a0
-datasette-openai==0.2
 datasette-json-html==1.0.1
 datasette-sqlite-regex==0.2.3
-datasette-explain==0.2.1
+datasette-explain>=0.2.2
 datasette-faiss==0.2.1
 datasette-simple-html==0.2
 datasette-dateutil==0.3

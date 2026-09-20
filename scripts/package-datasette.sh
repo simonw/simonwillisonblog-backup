@@ -8,7 +8,6 @@ output=${2:?Usage: package-datasette.sh DATABASE OUTPUT_DIRECTORY}
 datasette publish fly "$database" \
   --app simonwillisonblog-backup \
   --metadata metadata.yml \
-  --plugins-dir plugins \
   --extra-options "--config datasette.yml" \
   --install "-r requirements-datasette.txt" \
   --generate-dir "$output"

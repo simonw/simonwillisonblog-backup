@@ -1,5 +1,7 @@
 -r requirements-datasette.txt
 datasette-publish-fly==1.4
+# Required by the Fly publisher, not the deployed runtime.
+httpx==0.28.1
 pytest
 pytest-asyncio
 asgi-lifespan

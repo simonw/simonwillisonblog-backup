@@ -9,7 +9,6 @@ import sys
 from asgi_lifespan import LifespanManager
 from datasette.app import Datasette
 from datasette_graphql.utils import _schema_cache
-import httpx
 import pytest
 import pytest_asyncio
 import yaml
@@ -53,7 +52,6 @@ async def ds(database):
     _schema_cache.clear()
     datasette = Datasette(
         immutables=[str(database)],
-        plugins_dir=str(ROOT / "plugins"),
         metadata=yaml.safe_load((ROOT / "metadata.yml").read_text()),
         config=yaml.safe_load((ROOT / "datasette.yml").read_text()),
     )
@@ -73,8 +71,6 @@ async def ds(database):
         "/-/search?q=Datasette",
         "/graphql/simonwillisonblog",
         "/simonwillisonblog/recent_content",
-        "/simonwillisonblog/embedding_search",
-        "/simonwillisonblog/answer_question",
     ],
 )
 async def test_html(ds, path):
@@ -150,40 +146,6 @@ async def test_robots_and_canned_query(ds):
 
 
 @pytest.mark.asyncio
-async def test_embedding_and_answer_queries(ds, monkeypatch):
-    calls = []
-
-    def fake_post(url, *, headers, json, **kwargs):
-        assert headers["Authorization"] == "Bearer test-key"
-        calls.append(url)
-        if url.endswith("/embeddings"):
-            return httpx.Response(200, json={"data": [{"embedding": [1.0] * 1536}]})
-        assert url.endswith("/completions")
-        assert "Datasette entry" in json["prompt"]
-        return httpx.Response(200, json={"choices": [{"text": "Test answer"}]})
-
-    monkeypatch.setattr("datasette_openai.httpx.post", fake_post)
-    for name, parameter in [
-        ("embedding_search", "query"),
-        ("answer_question", "question"),
-    ]:
-        response = await ds.client.get(
-            f"/simonwillisonblog/{name}.json",
-            params={parameter: "Datasette", "_shape": "objects"},
-            headers={"cookie": "openai_api_key=test-key"},
-        )
-        assert response.status_code == 200, response.text
-        rows = response.json()["rows"]
-        assert rows
-        if name == "embedding_search":
-            assert rows[0]["value"] == 1
-        else:
-            assert rows[0] == {"title": "Response", "value": "Test answer"}
-    assert any(url.endswith("/embeddings") for url in calls)
-    assert any(url.endswith("/completions") for url in calls)
-
-
-@pytest.mark.asyncio
 async def test_mcp(ds):
     headers = {"accept": "application/json, text/event-stream"}
     response = await ds.client.post(
@@ -249,7 +211,6 @@ def test_fly_package(database, tmp_path):
         ROOT / "requirements-datasette.txt"
     ).read_bytes()
     assert (output / "simonwillisonblog.db").exists()
-    assert (output / "plugins" / "openai_cookie.py").exists()
     dockerfile = (output / "Dockerfile").read_text()
     assert "-r requirements-datasette.txt" in dockerfile
     assert "--config datasette.yml" in dockerfile
@@ -272,27 +233,6 @@ async def test_json_defaults_and_explicit_arrays(ds):
     assert response.status_code == 302
     response = await ds.client.get(response.headers["location"])
     assert response.json()["rows"] == [{"one": 1}]
-
-
-@pytest.mark.asyncio
-@pytest.mark.parametrize(
-    "name,parameter", [("embedding_search", "query"), ("answer_question", "question")]
-)
-async def test_missing_api_key(ds, monkeypatch, name, parameter):
-    def unexpected_call(*args, **kwargs):
-        pytest.fail("A query without an API key must not call OpenAI")
-
-    monkeypatch.setattr("datasette_openai.httpx.post", unexpected_call)
-    response = await ds.client.get(
-        f"/simonwillisonblog/{name}.json", params={parameter: "Test question"}
-    )
-    assert response.status_code == 200, response.text
-    rows = response.json()["rows"]
-    assert rows == (
-        [] if name == "embedding_search" else [{"title": "Prompt", "value": None}]
-    )
-    response = await ds.client.get(f"/simonwillisonblog/{name}")
-    assert response.status_code == 200
 
 
 @pytest.mark.asyncio
