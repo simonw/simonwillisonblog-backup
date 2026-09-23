@@ -147,3 +147,7 @@
 [334, "Can change upload batch", 282, "change_uploadbatch"]
 [335, "Can delete upload batch", 282, "delete_uploadbatch"]
 [336, "Can view upload batch", 282, "view_uploadbatch"]
+[362, "Can add short url", 314, "add_shorturl"]
+[363, "Can change short url", 314, "change_shorturl"]
+[364, "Can delete short url", 314, "delete_shorturl"]
+[365, "Can view short url", 314, "view_shorturl"]
