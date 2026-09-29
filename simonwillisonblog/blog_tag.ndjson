@@ -5249,7 +5249,7 @@
 [5841, "addy-osmani", ""]
 [5842, "alex-komoroske", ""]
 [5843, "prompt-caching", "Some LLM providers offer a feature where common prompt prefixes can be cached, providing a performance boost and price reduction."]
-[5864, "openai-operator", "[Operator](https://openai.com/index/introducing-operator/) is OpenAI's cloud-hosted browser automation \"agent\"."]
+[5864, "openai-operator", "[Operator](https://openai.com/index/introducing-operator/) was OpenAI's first attempt at a cloud-hosted browser automation \"agent\"."]
 [5865, "long-context", "Tracking how LLMs are getting better at accepting large amounts of input."]
 [5866, "paul-gauthier", ""]
 [5867, "benjamin-breen", ""]
@@ -5443,3 +5443,4 @@
 [6590, "jev", ""]
 [6591, "muse-agent", "Meta's \"personal AI agent\"."]
 [6592, "muse", "The Muse family of LLMs from Meta AI."]
+[6593, "openai-devday", "The annual OpenAI DevDay event."]
