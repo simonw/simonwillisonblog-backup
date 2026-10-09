@@ -36,3 +36,4 @@
 [281, "s3_web_manager_django", "favorite"]
 [282, "s3_web_manager_django", "uploadbatch"]
 [314, "shortener", "shorturl"]
+[315, "blog", "newsletter"]

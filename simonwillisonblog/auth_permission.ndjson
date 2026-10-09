@@ -151,3 +151,7 @@
 [363, "Can change short url", 314, "change_shorturl"]
 [364, "Can delete short url", 314, "delete_shorturl"]
 [365, "Can view short url", 314, "view_shorturl"]
+[366, "Can add newsletter", 315, "add_newsletter"]
+[367, "Can change newsletter", 315, "change_newsletter"]
+[368, "Can delete newsletter", 315, "delete_newsletter"]
+[369, "Can view newsletter", 315, "view_newsletter"]
