@@ -4377,7 +4377,7 @@
 [4522, "wepeterson", ""]
 [4523, "werewolf", ""]
 [4524, "werkzeug", ""]
-[4525, "wernervogels", ""]
+[4525, "werner-vogels", ""]
 [4526, "wesabi", ""]
 [4527, "wesley-chun", ""]
 [4528, "westciv", ""]
@@ -5447,3 +5447,4 @@
 [6623, "three-js", ""]
 [6656, "steve-francia", ""]
 [6657, "ted-sanders", ""]
+[6658, "decision-models", "A new shape of LLM, pioneered [by Jev](https://simonwillison.net/2026/Sep/21/jev/)."]
