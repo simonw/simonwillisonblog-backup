@@ -280,7 +280,6 @@
 [292, "backdoor", ""]
 [293, "backfills", ""]
 [294, "backgrounds", ""]
-[295, "backup", ""]
 [296, "backups", ""]
 [297, "backwardscompatibility", ""]
 [298, "badger", ""]
@@ -5448,3 +5447,4 @@
 [6658, "decision-models", "A new shape of LLM, pioneered [by Jev](https://simonwillison.net/2026/Sep/21/jev/)."]
 [6689, "yonkers-rising", "The results of telling a model (via a coding agent harness) to \"Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\"."]
 [6690, "levent-alpoge", ""]
+[6691, "datasette-charts", "[datasette-charts](https://github.com/datasette/datasette-charts) is a visualization plugin for [Datasette](https://datasette.io/) and [Datasette Agent](https://agent.datasette.io/)."]
